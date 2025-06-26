@@ -29,8 +29,6 @@ class ArquivosRecentesActivityRoom : AppCompatActivity() {
     private var adapter: ArrayAdapter<String>? = null
     private val displayList = mutableListOf<String>()
 
-    private var isFinishingDueToResultPropagation = false // Flag para otimizar onResume
-
     data class ArtigoRecenteItem(val id: Long, val nome: String, val preco: Double, val quantidade: Int, val numeroSerial: String?, val descricao: String?)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,7 +75,6 @@ class ArquivosRecentesActivityRoom : AppCompatActivity() {
                         putExtra("descricao", artigoSelecionado.descricao)
                         putExtra("salvar_fatura", true)
                     }
-                    isFinishingDueToResultPropagation = true
                     setResult(RESULT_OK, intent)
                     finish()
                 } else {
@@ -114,21 +111,13 @@ class ArquivosRecentesActivityRoom : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        if (!isFinishingDueToResultPropagation) {
-            carregarArtigos()
-        }
-        // A flag será resetada naturalmente na próxima vez que onCreate for chamado,
-        // ou se a atividade for retomada sem estar finalizando por propagação.
+        carregarArtigos()
     }
 
-    override fun onPause() {
-        super.onPause()
-        // Se a atividade está finalizando por propagação, resetamos a flag
-        // para que um próximo onResume (se ocorrer por algum motivo inesperado)
-        // não pule o carregamento. Mas normalmente finish() já resolve.
-        if (isFinishing && isFinishingDueToResultPropagation) {
-            isFinishingDueToResultPropagation = false
-        }
+    override fun onBackPressed() {
+        Log.d("ArquivosRecentesActivityRoom", "onBackPressed disparado")
+        // Voltar para a SecondScreenActivity
+        finish()
     }
 
     private fun carregarArtigos() {
@@ -181,11 +170,12 @@ class ArquivosRecentesActivityRoom : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 792) { // Retorno de CriarNovoArtigoActivityRoom
             if (resultCode == RESULT_OK && data != null) {
-                isFinishingDueToResultPropagation = true
+                // Se um novo artigo foi criado com sucesso, propagar o resultado para a SecondScreenActivity
+                Log.d("ArquivosRecentesActivityRoom", "Novo artigo criado com sucesso, propagando resultado")
                 setResult(RESULT_OK, data)
                 finish()
             } else {
-                isFinishingDueToResultPropagation = false // Garante que onResume recarregue se o usuário cancelou
+                Log.d("ArquivosRecentesActivityRoom", "Criação de artigo cancelada ou falhou")
             }
         }
     }

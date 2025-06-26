@@ -248,45 +248,20 @@ class CriarNovoArtigoActivityRoom : AppCompatActivity() {
             return
         }
 
-        Log.d("CriarNovoArtigo", "Salvando: nome=$nome, qtd=$quantidade, precoUnit=$precoUnitario, guardar=$guardarParaRecentes")
+        Log.d("CriarNovoArtigo", "Salvando: nome=$nome, qtd=$quantidade, precoUnit=$precoUnitario, guardar=$guardarParaRecentes, artigoId=$artigoId")
 
         val valorTotalItem = precoUnitario * quantidade
         var idParaRetorno = artigoId
 
-        if (guardarParaRecentes) {
-            try {
-                if (artigoId != -1L) {
-                    // Atualiza artigo existente
-                    artigoViewModel.getArtigoById(artigoId,
-                        onSuccess = { artigo ->
-                            artigo?.let { artigoEncontrado ->
-                                val artigoAtualizado = artigoEncontrado.copy(
-                                    nome = nome,
-                                    preco = precoUnitario,
-                                    quantidade = 1,
-                                    desconto = 0.0,
-                                    descricao = descricao,
-                                    guardarFatura = true,
-                                    numeroSerial = numeroSerial
-                                )
-                                artigoViewModel.updateArtigo(artigoAtualizado,
-                                    onSuccess = {
-                                        showToast("Artigo atualizado e guardado para recentes!")
-                                    },
-                                    onError = { exception ->
-                                        Log.e("CriarNovoArtigo", "Erro ao atualizar artigo: ${exception.message}")
-                                        showToast("Erro ao atualizar artigo")
-                                    }
-                                )
-                            }
-                        },
-                        onError = { exception ->
-                            Log.e("CriarNovoArtigo", "Erro ao buscar artigo: ${exception.message}")
-                            showToast("Erro ao buscar artigo")
-                        }
-                    )
-                } else {
-                    // Cria novo artigo
+        // Se o artigo já existe (artigoId != -1), apenas atualizar se necessário
+        if (artigoId != -1L) {
+            Log.d("CriarNovoArtigo", "Artigo já existe (ID: $artigoId), apenas retornando dados atualizados")
+            // Não criar novo artigo, apenas usar o ID existente
+            idParaRetorno = artigoId
+        } else {
+            // Artigo novo - criar no banco apenas se guardarParaRecentes for true
+            if (guardarParaRecentes) {
+                try {
                     val novoArtigo = Artigo(
                         id = 0, // Room irá gerar o ID
                         nome = nome,
@@ -299,43 +274,26 @@ class CriarNovoArtigoActivityRoom : AppCompatActivity() {
                     )
                     artigoViewModel.insertArtigo(novoArtigo,
                         onSuccess = { id ->
+                            idParaRetorno = id
                             showToast("Novo artigo salvo e guardado para recentes!")
                         },
                         onError = { exception ->
                             Log.e("CriarNovoArtigo", "Erro ao inserir artigo: ${exception.message}")
                             showToast("Erro ao salvar artigo")
+                            // Mesmo com erro, continuar com ID temporário
+                            idParaRetorno = -System.currentTimeMillis()
                         }
                     )
+                } catch (e: Exception) {
+                    Log.e("CriarNovoArtigo", "Erro ao salvar artigo no DB: ${e.message}")
+                    showToast("Erro ao interagir com o banco de dados para 'Recentes'.")
+                    idParaRetorno = -System.currentTimeMillis()
                 }
-            } catch (e: Exception) {
-                Log.e("CriarNovoArtigo", "Erro ao salvar/atualizar artigo no DB: ${e.message}")
-                showToast("Erro ao interagir com o banco de dados para 'Recentes'.")
-            }
-        } else {
-            if (artigoId != -1L) {
-                artigoViewModel.getArtigoById(artigoId,
-                    onSuccess = { artigo ->
-                        artigo?.let { artigoEncontrado ->
-                            val artigoAtualizado = artigoEncontrado.copy(guardarFatura = false)
-                            artigoViewModel.updateArtigo(artigoAtualizado,
-                                onSuccess = {
-                                    Log.d("CriarNovoArtigo", "Artigo ID $artigoId removido dos recentes (flag atualizada).")
-                                },
-                                onError = { exception ->
-                                    Log.e("CriarNovoArtigo", "Erro ao atualizar artigo: ${exception.message}")
-                                }
-                            )
-                        }
-                    },
-                    onError = { exception ->
-                        Log.e("CriarNovoArtigo", "Erro ao buscar artigo: ${exception.message}")
-                    }
-                )
-            }
-            if (idParaRetorno == -1L || idParaRetorno == 0L) {
+            } else {
+                // Artigo novo mas não guardar para recentes
                 idParaRetorno = -System.currentTimeMillis()
+                showToast("Artigo será usado apenas na fatura atual.")
             }
-            showToast("Artigo será usado apenas na fatura atual.")
         }
 
         val resultIntent = Intent().apply {

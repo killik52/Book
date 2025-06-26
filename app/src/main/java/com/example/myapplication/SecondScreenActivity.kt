@@ -1450,15 +1450,29 @@ class SecondScreenActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         Log.d("SecondScreen", "onBackPressed disparado.")
-        // Salvar a fatura se necessário e voltar para a MainActivity
-        trySaveAndExit()
+        
+        // Verificar se há dados para salvar
+        val podeSalvar = !nomeClienteSalvo.isNullOrEmpty() &&
+                nomeClienteSalvo != getString(R.string.adicionar_cliente_text) &&
+                artigosList.isNotEmpty()
+
+        if (podeSalvar && !isFaturaSaved) {
+            Log.d("SecondScreen", "onBackPressed: Tentando salvar fatura antes de sair.")
+            // Salvar a fatura e depois finalizar
+            saveFatura(finalizarActivityAposSalvar = true)
+        } else {
+            Log.d("SecondScreen", "onBackPressed: Finalizando atividade sem salvar.")
+            // Finalizar a atividade imediatamente
+            finish()
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        }
     }
 
     override fun onStop() {
         super.onStop()
         Log.d("SecondScreen", "onStop: isFinishing=$isFinishing, isChangingConfigurations=$isChangingConfigurations")
-        // Não salvar automaticamente se a atividade está sendo finalizada
-        if (!isFinishing && !isChangingConfigurations) {
+        // Não salvar automaticamente se a atividade está sendo finalizada ou mudando configuração
+        if (!isFinishing && !isChangingConfigurations && !isDestroyed) {
             val podeSalvar = !nomeClienteSalvo.isNullOrEmpty() &&
                     nomeClienteSalvo != getString(R.string.adicionar_cliente_text) &&
                     artigosList.isNotEmpty()
@@ -2139,14 +2153,15 @@ class SecondScreenActivity : AppCompatActivity() {
                 // Fechar a atividade imediatamente após salvar no SQLite
                 if (finalizarActivityAposSalvar) {
                     Log.d("SecondScreen", "Fechando atividade imediatamente após salvar no SQLite")
-                    isFaturaSaved = true
-                    // Marcar que a atividade foi fechada para evitar reabertura
-                    intent.putExtra("REOPENED_AFTER_FINISH", true)
+                    // Salvar no Room em background (sem bloquear a UI)
+                    saveFaturaToRoom(novoFaturaId, values, false)
+                    // Finalizar a atividade
                     finish()
                     overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+                } else {
+                    // Salvar no Room em background (sem bloquear a UI)
+                    saveFaturaToRoom(novoFaturaId, values, false)
                 }
-                // Salvar no Room em background (sem bloquear a UI)
-                saveFaturaToRoom(novoFaturaId, values, false)
             } else {
                 // Se não salvou com sucesso, ainda fechar a atividade se solicitado
                 if (finalizarActivityAposSalvar) {
@@ -2194,18 +2209,14 @@ class SecondScreenActivity : AppCompatActivity() {
                 faturaRepository.insertFatura(fatura)
                 Log.d("SecondScreen", "Fatura salva no Room com sucesso: ID=$faturaId")
                 
-                // Mostrar toast apenas se a atividade ainda estiver ativa e não estiver sendo finalizada
+                // Mostrar toast apenas se a atividade ainda estiver ativa
                 if (!isFinishing && !isDestroyed) {
                     showToast("Fatura salva com sucesso!")
                 }
                 
-                // Não fechar a atividade aqui, pois já foi fechada no método principal
-                Log.d("SecondScreen", "Fatura salva no Room com sucesso - atividade já fechada")
-                
             } catch (e: Exception) {
                 Log.e("SecondScreen", "Erro ao salvar fatura no Room: ${e.message}", e)
                 // Não mostrar erro para o usuário pois o SQLite já foi salvo
-                // A atividade já foi fechada, então não tentar fechar novamente
             }
         }
     }
