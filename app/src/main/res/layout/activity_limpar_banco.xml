@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpar Bancos de Dados"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta ação irá remover TODOS os dados salvos no aplicativo, incluindo:\n\n• Banco Room (Clientes, Artigos, Faturas)\n• Banco SQLite (Dados tradicionais)\n• Itens de Fatura\n• Notas e Fotos\n• Clientes Bloqueados\n• Faturas na Lixeira\n• Configurações salvas\n• Números de fatura\n• Arquivos de fotos salvos\n\n⚠️ ATENÇÃO: Esta ação não pode ser desfeita!"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnLimparBanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar Todos os Bancos"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_rectangle"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:minHeight="48dp" />
+
+</LinearLayout> 

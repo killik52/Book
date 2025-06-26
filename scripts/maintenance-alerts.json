@@ -1,0 +1,233 @@
+{
+  "project": {
+    "name": "BOOKV",
+    "version": "1.0",
+    "lastUpdated": "2025-01-22"
+  },
+  "maintenance": {
+    "schedule": {
+      "monthly": [
+        "Verificar crashes no Google Play Console",
+        "Atualizar dependências menores",
+        "Testar em dispositivo físico"
+      ],
+      "quarterly": [
+        "Atualizar dependências principais",
+        "Revisar código para APIs deprecated",
+        "Testar em diferentes versões do Android"
+      ],
+      "semestral": [
+        "Atualizar compileSdk/targetSdk",
+        "Revisar estratégia de backup",
+        "Otimizar performance"
+      ],
+      "annual": [
+        "Reavaliar minSdk",
+        "Migrar APIs deprecated críticas",
+        "Atualizar documentação"
+      ]
+    },
+    "criticalDependencies": {
+      "room": {
+        "current": "2.6.1",
+        "minRecommended": "2.6.0",
+        "updateFrequency": "6 months",
+        "description": "Banco de dados Room"
+      },
+      "lifecycle": {
+        "current": "2.8.1",
+        "minRecommended": "2.8.0",
+        "updateFrequency": "6 months",
+        "description": "ViewModels e Lifecycle"
+      },
+      "appcompat": {
+        "current": "1.7.0",
+        "minRecommended": "1.7.0",
+        "updateFrequency": "6 months",
+        "description": "Compatibilidade Android"
+      },
+      "material": {
+        "current": "1.12.0",
+        "minRecommended": "1.12.0",
+        "updateFrequency": "6 months",
+        "description": "Componentes de UI"
+      },
+      "retrofit": {
+        "current": "2.9.0",
+        "minRecommended": "2.9.0",
+        "updateFrequency": "12 months",
+        "description": "APIs Web"
+      },
+      "mlkit": {
+        "current": "16.0.0",
+        "minRecommended": "16.0.0",
+        "updateFrequency": "12 months",
+        "description": "OCR e reconhecimento de texto"
+      },
+      "zxing": {
+        "current": "4.3.0",
+        "minRecommended": "4.3.0",
+        "updateFrequency": "12 months",
+        "description": "Códigos de barras"
+      }
+    },
+    "androidConfig": {
+      "compileSdk": {
+        "current": 34,
+        "minRecommended": 34,
+        "target": 35,
+        "description": "SDK de compilação"
+      },
+      "minSdk": {
+        "current": 24,
+        "minRecommended": 24,
+        "target": 26,
+        "description": "SDK mínimo suportado"
+      },
+      "targetSdk": {
+        "current": 34,
+        "minRecommended": 34,
+        "target": 35,
+        "description": "SDK alvo"
+      }
+    },
+    "kotlinConfig": {
+      "version": {
+        "current": "1.9.23",
+        "minRecommended": "1.9.0",
+        "target": "1.9.23",
+        "description": "Versão do Kotlin"
+      },
+      "javaVersion": {
+        "current": 17,
+        "minRecommended": 17,
+        "target": 17,
+        "description": "Versão do Java"
+      }
+    }
+  },
+  "alerts": {
+    "highPriority": [
+      {
+        "id": "kotlin_2_0",
+        "title": "Kotlin 2.0 Release",
+        "description": "Quando Kotlin 2.0 for lançado, pode quebrar compatibilidade",
+        "action": "Aguardar release e testar compatibilidade",
+        "status": "monitoring"
+      },
+      {
+        "id": "android_15",
+        "title": "Android 15 Release",
+        "description": "Novas restrições de permissões podem afetar o app",
+        "action": "Testar em Android 15 beta quando disponível",
+        "status": "monitoring"
+      },
+      {
+        "id": "play_store_requirements",
+        "title": "Google Play Store Requirements",
+        "description": "Novos requisitos de privacidade podem ser implementados",
+        "action": "Monitorar anúncios do Google Play",
+        "status": "monitoring"
+      }
+    ],
+    "mediumPriority": [
+      {
+        "id": "dependencies_outdated",
+        "title": "Dependências Desatualizadas",
+        "description": "Dependências podem estar desatualizadas",
+        "action": "Executar script de verificação mensalmente",
+        "status": "active"
+      },
+      {
+        "id": "apis_deprecated",
+        "title": "APIs Deprecated",
+        "description": "Algumas APIs podem estar deprecated",
+        "action": "Revisar código trimestralmente",
+        "status": "active"
+      }
+    ],
+    "lowPriority": [
+      {
+        "id": "performance_optimization",
+        "title": "Otimização de Performance",
+        "description": "Otimizações de performance podem ser implementadas",
+        "action": "Revisar semestralmente",
+        "status": "active"
+      }
+    ]
+  },
+  "testing": {
+    "devices": [
+      {
+        "name": "Pixel 9",
+        "api": 35,
+        "screen": "1080x2424",
+        "density": 420
+      },
+      {
+        "name": "Galaxy S24",
+        "api": 34,
+        "screen": "1080x2340",
+        "density": 480
+      },
+      {
+        "name": "Galaxy A15",
+        "api": 34,
+        "screen": "1080x2340",
+        "density": 450
+      },
+      {
+        "name": "Moto G34",
+        "api": 34,
+        "screen": "720x1600",
+        "density": 280
+      }
+    ],
+    "criticalFeatures": [
+      "Criação de faturas",
+      "Geração de PDF",
+      "OCR de documentos",
+      "Leitura de códigos de barras",
+      "Backup e restauração",
+      "Listagem de clientes e artigos"
+    ]
+  },
+  "backup": {
+    "strategy": {
+      "automatic": {
+        "enabled": true,
+        "description": "Backup automático do Android"
+      },
+      "manual": {
+        "enabled": true,
+        "description": "Exportação manual de dados"
+      },
+      "cloud": {
+        "enabled": false,
+        "description": "Backup na nuvem (Google Drive/Dropbox)"
+      }
+    }
+  },
+  "monitoring": {
+    "tools": [
+      {
+        "name": "Firebase Crashlytics",
+        "status": "not_implemented",
+        "priority": "high",
+        "description": "Relatórios de crashes em tempo real"
+      },
+      {
+        "name": "Google Play Console",
+        "status": "available",
+        "priority": "medium",
+        "description": "Métricas de uso e crashes"
+      },
+      {
+        "name": "Android Vitals",
+        "status": "available",
+        "priority": "medium",
+        "description": "Performance do app"
+      }
+    ]
+  }
+} 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Definir Período Customizado"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonDataInicioDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data de Início"
+        android:backgroundTint="@color/top_band_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/buttonDataFimDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Final"
+        android:backgroundTint="@color/top_band_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonAplicarCustomizadoDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicar Filtro"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
