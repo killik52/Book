@@ -206,7 +206,6 @@ class MainActivityRoom : AppCompatActivity() {
 
         binding.homeIcon.setOnClickListener {
             val intent = Intent(this, MainActivityRoom::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
         }

@@ -142,7 +142,7 @@ class ArquivosRecentesActivity : AppCompatActivity() {
                         "${ArtigoContract.ArtigoEntry.COLUMN_NAME_DESCRICAO} " +
                         "FROM ${ArtigoContract.ArtigoEntry.TABLE_NAME} " +
                         "WHERE ${ArtigoContract.ArtigoEntry.COLUMN_NAME_GUARDAR_FATURA} = 1 " +
-                        "ORDER BY ${android.provider.BaseColumns._ID} DESC",
+                        "ORDER BY ${android.provider.BaseColumns._ID} ASC",
                 null
             )
 

@@ -1,0 +1,450 @@
+06-26 15:38:48.745  1130  1161 E Watchdog: !@Sync: 1208 heap: 124 / 139 FD: 1202 [2025-06-26 15:38:48.745]
+06-26 15:38:55.132  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: com.google.uid.shared, scannerId: 4, reportDelayMillis=0
+06-26 15:38:55.132  1130  1150 E WindowManager: win=Window{bebb22c u0 com.android.dreams.basic/android.service.dreams.DreamActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6952 com.android.server.wm.ActivityRecord.destroySurfaces:6933 com.android.server.wm.ActivityRecord.activityStopped:7633 com.android.server.wm.ActivityClientController.activityStopped:321 android.app.IActivityClientController$Stub.onTransact:702 com.android.server.wm.ActivityClientController.onTransact:186 android.os.Binder.execTransactInternal:1380 
+06-26 15:38:55.135  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: com.google.uid.shared, scannerId: 7, reportDelayMillis=0
+06-26 15:38:55.136  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: com.google.uid.shared, scannerId: 6, reportDelayMillis=0
+06-26 15:38:55.166  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_STOP, appName: com.google.android.gms, id: 1, isLegacy: true
+06-26 15:38:55.203  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_START, appName: com.google.android.gms, id: 0, isLegacy: true
+06-26 15:38:55.216  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_START, appName: com.google.android.gms, id: 1, isLegacy: true
+06-26 15:38:55.258  1130  4655 E Transition: Trying to add a ready-group twice: Display{#0 state=OFF size=1080x2400 ROTATION_0}
+06-26 15:38:55.277  1130  4484 E Transition: Trying to add a ready-group twice: Display{#0 state=OFF size=1080x2400 ROTATION_0}
+06-26 15:38:55.294  1585  1585 E AbsSettings: refreshInner: refreshedSettingsDBItem key CLOCK_VERSION val = 300000
+06-26 15:38:55.294  1585  1585 E AbsSettings: refreshInner: refreshedSettingsDBItem key PALETTE_VERSION val = 90000
+06-26 15:38:55.332  1585 10346 E KeyguardViewMediator: resetStateLocked
+06-26 15:38:55.339  1585  1585 E AbsSettings: refreshInner: refreshedSettingsDBItem key CLOCK_VERSION val = 300000
+06-26 15:38:55.340  1585  1585 E AbsSettings: refreshInner: refreshedSettingsDBItem key PALETTE_VERSION val = 400000
+06-26 15:38:55.344  1585  1585 E AbsSettings: refreshInner: refreshedSettingsDBItem key aod_show_music_information val = 0
+06-26 15:38:55.349  1130  4463 E PersonaManagerService: DeviceLocked : true, DeviceSecure : true
+06-26 15:38:55.360  1130  1130 E PocketModeEvent: ACTION_SCREEN_OFF
+06-26 15:38:55.360  1130  1130 E PocketModeEvent: currentState : 1
+06-26 15:38:55.361  1130  1130 E PocketProximityManager: File not found! - Write
+06-26 15:38:55.361  1130  1130 E PocketProximityManager: Output file is null!
+06-26 15:38:55.363  1130  1340 E PocketModeEvent: MSG_TYPE_STOP_SENSING
+06-26 15:38:55.397  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: android.uid.bcmgr, scannerId: 3, reportDelayMillis=0
+06-26 15:38:55.399  1585  1585 E MODManager: hideSubUIChargingInfo skip because mAODChargingInfoSubUiPresenter is null
+06-26 15:38:55.400  1130  1520 D WifiAwareStateManager: handleMessage: E msg.what=1
+06-26 15:38:55.401  1585  1585 E AOD_CONFIG@AODConfigurationController: Skipping initialize MONITOR_FOLD_STATE - no registered monitor
+06-26 15:38:55.403  2521  8734 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.410  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: com.samsung.android.mcfserver, scannerId: 2, reportDelayMillis=0
+06-26 15:38:55.419  1130  1130 E PersonaManagerService: DeviceLocked : true, DeviceSecure : true
+06-26 15:38:55.422  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: android.uid.system, scannerId: 5, reportDelayMillis=0
+06-26 15:38:55.432  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.434  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.471  3673 22356 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.474  3673 22356 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.477  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: android.uid.mdxkit, scannerId: 1, reportDelayMillis=0
+06-26 15:38:55.479  3673 26607 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.486  1585  8892 E BufferQueueProducer: [](id:631000006e4,api:0,p:0,c:1585) disconnect: not connected (req=3)
+06-26 15:38:55.544  8904  8904 E chbox:googleapp: Not starting debugger since process cannot load the jdwp agent.
+06-26 15:38:55.594  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: android.uid.mdxkit, scannerId: 1, reportDelayMillis=0
+06-26 15:38:55.655   687   687 E audit   : type=1400 audit(1750963135.648:13035): avc:  denied  { getattr } for  pid=780 comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:55.940  1130  2978 E SemWifiApSmartBleScanner: mGuidScanFilterBluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=117, mManufacturerData=[1, 18, 42, 14, 45, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], mManufacturerDataMask=[0, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null]
+06-26 15:38:55.979  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: android.uid.system, scannerId: 2, reportDelayMillis=0
+06-26 15:38:56.432  1130  1130 E ActivityManager: Cancel pending or running compactions as system is awake
+06-26 15:38:56.449   687   687 E audit   : type=1400 audit(1750963136.448:13036): avc:  denied  { getattr } for  pid=780 comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:56.455   687   687 E audit   : type=1400 audit(1750963136.452:13037): avc:  denied  { getattr } for  pid=780 comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:56.460   687   687 E audit   : type=1400 audit(1750963136.456:13038): avc:  denied  { getattr } for  pid=780 comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:56.477  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: android.uid.bcmgr, scannerId: 3, reportDelayMillis=0
+06-26 15:38:56.499  1130  1130 E PocketModeEvent: ACTION_SCREEN_ON(by 1)
+06-26 15:38:56.503  1130  1340 E PocketMotionManager: register tilt sensor
+06-26 15:38:56.504  1130  1340 E PocketModeEvent: MSG_TYPE_START_SENSING
+06-26 15:38:56.513   687   687 E audit   : type=1400 audit(1750963136.512:13039): avc:  denied  { getattr } for  pid=780 comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:56.516   687   687 E audit   : type=1400 audit(1750963136.512:13040): avc:  denied  { getattr } for  pid=780 comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:56.538  1130  1828 E SLocation: SecureDBAdapter - start setEventGeofenceCellDatas : 100
+06-26 15:38:56.538  1130  1828 E SLocation: SecureDBAdapter - remove EventGeofenceCellData id : 1, cell size : 0___remove EventGeofenceCellData id : 2, cell size : 0___remove EventGeofenceCellData id : 3, cell size : 0___remove EventGeofenceCellData id : 4, cell size : 0___remove EventGeofenceCellData id : 5, cell size : 0___remove EventGeofenceCellData id : 6, cell size : 0___remove EventGeofenceCellData id : 7, cell size : 0___remove EventGeofenceCellData id : 8, cell size : 0___remove EventGeofenceCellData id : 9, cell size : 0___remove EventGeofenceCellData id : 10, cell size : 0___remove EventGeofenceCellData id : 11, cell size : 0___remove EventGeofenceCellData id : 12, cell size : 0___remove EventGeofenceCellData id : 13, cell size : 0___remove EventGeofenceCellData id : 14, cell size : 0___remove EventGeofenceCellData id : 15, cell size : 0___remove EventGeofenceCellData id : 16, cell size : 0___remove EventGeofenceCellData id : 17, cell size : 0___remove EventGeofenceCellData id : 18, cell size : 0___remove EventGeofenceCellData id : 19, cell size : 0___remove EventGeofenceCellData id : 20, cell size : 0___remove EventGeofenceCellData id : 21, cell size : 0___remove EventGeofenceCellData id : 22, cell size : 0___remove EventGeofenceCellData id : 23, cell size : 0___remove EventGeofenceCellData id : 24, cell size : 0___remove EventGeofenceCellData id : 25, cell size : 0___remove EventGeofenceCellData id : 28, cell size : 0___remove EventGeofenceCellData id : 29, cell size : 0___remove EventGeofenceCellData id : 30, cell size : 0___remove EventGeofenceCellData id : 31, cell size : 0___remove EventGeofenceCellData id : 32, cell size : 0___remove EventGeofenceCellData id : 33, cell size : 0___remove EventGeofenceCellData id : 34, cell size : 0___remove EventGeofenceCellData id : 35, cell size : 0___remove EventGeofenceCellData id : 36, cell size : 0___remove EventGeofenceCellData id : 37, cell size : 0___remove EventGeofenceCellData id : 38, cell size : 0___remove EventGeofenceCellData id : 39, cell size : 0___remove EventGeofenceCellData id : 40, cell size : 0___remove EventGeofenceCellData id : 41, cell size : 0___remove EventGeofenceCellData id : 42, cell size : 0___remove EventGeofenceCellData id : 43, cell size : 0___remove EventGeofenceCellData id : 44, cell size : 0___remove EventGeofenceCellData id : 45, cell size : 0___remove EventGeofenceCellData id : 46, cell size : 0___remove EventGeofenceCellData id : 47, cell size : 0___remove EventGeofenceCellData id : 48, cell size : 0___remove EventGeofenceCellData id : 49, cell size : 0___remove EventGeofenceCellData id : 50, cell size : 0___remove EventGeofenceCellData id : 51, cell size : 0___remove EventGeofenceCellData id : 52, cell size : 0___remove EventGeofenceCellData id : 53, cell size : 0___remove EventGeofenceCellData id : 54, cell size : 0___remove EventGeofenceCellData id : 55, cell size : 0___remove EventGeofenceCellData id : 56, cell size : 0___remove EventGeofenceCellData id : 57, cell size : 0___remove EventGeofenceCellData id : 58, cell size : 0___remove EventGeofenceCellData id : 59, cell size : 0___remove EventGeofenceCellData id : 60, cell size : 0___remove EventGeofenceCellData id : 61, cell size : 0___remove EventGeofenceCellData id : 62, cell size : 0___remove EventGeofenceCellData id : 63, cell size : 0___remove EventGeofenceCellData id : 64, cell size : 0___remove EventGeofenceCellData id : 65, cell size : 0___remove EventGeofenceCellData id : 66, cell size : 0___remove EventGeofenceCellData id : 67, cell size : 0___remove EventGeofenceCellData id : 68, cell size : 0___remove EventGeofenceCellData id : 69, cell size : 0___remove EventGeofenceCellData id : 70, cell size : 0___remove EventGeofenceCellData id : 71, cell size : 0___remove EventGeofenceCellData id : 72, cell size : 0___remove EventGeofenceCellData id : 73, cell size : 0___remove EventGeofenceCellData id : 74, cell size : 0___remove EventGeofenceCellData id : 75, cell size : 0___remove EventGeofenceCellData id : 76, cell size : 0___remove EventGeofenceCellData id : 77, cell size : 0
+06-26 15:38:56.538  1130  1828 E SLocation: SecureDBAdapter - add EventGeofenceCellDatas___id : 1, cell size : 0___id : 2, cell size : 0___id : 3, cell size : 0___id : 4, cell size : 0___id : 5, cell size : 0___id : 6, cell size : 0___id : 7, cell size : 0___id : 8, cell size : 0___id : 9, cell size : 0___id : 10, cell size : 0___id : 11, cell size : 0___id : 12, cell size : 0___id : 13, cell size : 0___id : 14, cell size : 0___id : 15, cell size : 0___id : 16, cell size : 0___id : 17, cell size : 0___id : 18, cell size : 0___id : 19, cell size : 0___id : 20, cell size : 0___id : 21, cell size : 0___id : 22, cell size : 0___id : 23, cell size : 0___id : 24, cell size : 0___id : 25, cell size : 0___id : 28, cell size : 0___id : 29, cell size : 0___id : 30, cell size : 0___id : 31, cell size : 0___id : 32, cell size : 0___id : 33, cell size : 0___id : 34, cell size : 0___id : 35, cell size : 0___id : 36, cell size : 0___id : 37, cell size : 0___id : 38, cell size : 0___id : 39, cell size : 0___id : 40, cell size : 0___id : 41, cell size : 0___id : 42, cell size : 0___id : 43, cell size : 0___id : 44, cell size : 0___id : 45, cell size : 0___id : 46, cell size : 0___id : 47, cell size : 0___id : 48, cell size : 0___id : 49, cell size : 0___id : 50, cell size : 0___id : 51, cell size : 0___id : 52, cell size : 0___id : 53, cell size : 0___id : 54, cell size : 0___id : 55, cell size : 0___id : 56, cell size : 0___id : 57, cell size : 0___id : 58, cell size : 0___id : 59, cell size : 0___id : 60, cell size : 0___id : 61, cell size : 0___id : 62, cell size : 0___id : 63, cell size : 0___id : 64, cell size : 0___id : 65, cell size : 0___id : 66, cell size : 0___id : 67, cell size : 0___id : 68, cell size : 0___id : 69, cell size : 0___id : 70, cell size : 0___id : 71, cell size : 0___id : 72, cell size : 0___id : 73, cell size : 0___id : 74, cell size : 0___id : 75, cell size : 0___id : 76, cell size : 0___id : 77, cell size : 0___id : 78, cell size : 0___id : 79, cell size : 0___id : 80, cell size : 0___id : 81, cell size : 0___id : 82, cell size : 0___id : 83, cell size : 0___id : 84, cell size : 0___id : 85, cell size : 0___id : 86, cell size : 0___id : 87, cell size : 0___id : 88, cell size : 0___id : 89, cell size : 0___id : 90, cell size : 0___id : 91, cell size : 0___id : 92, cell size : 0___id : 93, cell size : 0___id : 94, cell size : 0___id : 95, cell size : 0___id : 96, cell size : 0___id : 97, cell size : 0___id : 98, cell size : 0___id : 99, cell size : 0___id : 100, cell size : 0___id : 101, cell size : 0___id : 102, cell size : 0
+06-26 15:38:56.538  1130  1828 E SLocation: SecureDBAdapter - end setEventGeofenceCellDatas
+06-26 15:38:56.558  2521  8882 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.561  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: com.google.uid.shared, scannerId: 4, reportDelayMillis=0
+06-26 15:38:56.583  1130  1828 E SLocation: LocationTimeValidator - SP diff time is 772606770578ms
+06-26 15:38:56.603  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.614  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: android.uid.system, scannerId: 2, reportDelayMillis=0
+06-26 15:38:56.614  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.614  1130  1520 D WifiAwareStateManager: handleMessage: E msg.what=1
+06-26 15:38:56.621  3673 22345 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.627  3673 22345 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.632  3673 26607 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.651  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: android.uid.mdxkit, scannerId: 1, reportDelayMillis=0
+06-26 15:38:56.665  1585  1585 E AOD_CONFIG@AODConfigurationController: Skipping unregisterMonitor MONITOR_BROADCAST_WALLPAPER - no registered monitor
+06-26 15:38:56.665  1585  1585 E AOD_CONFIG@AODConfigurationController: Skipping unregisterMonitor MONITOR_FOLD_STATE - no registered monitor
+06-26 15:38:56.670  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: com.samsung.android.mcfserver, scannerId: 2, reportDelayMillis=0
+06-26 15:38:56.699  1585  1585 E MODManager: hideSubUIChargingInfo skip because mAODChargingInfoSubUiPresenter is null
+06-26 15:38:56.700  1585  1585 E SQLiteLog: (10) POSIX Error : 11 SQLite Error : 3850
+06-26 15:38:56.700  1585  1585 E SQLiteLog: (10) LOCK : Getting lock (4) failed due to (11). The current owner is (3527).
+06-26 15:38:56.764  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: android.uid.mdxkit, scannerId: 1, reportDelayMillis=0
+06-26 15:38:56.849   745   779 E BatteryDump: !@new_battery_dump : 3504,-1387,100,100,4,322,322,367,0,0,331,367,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3641,470,990,0,
+06-26 15:38:56.879  1585 28102 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:38:57.009  1130  1334 E CAE     : parse(SensorHubModeHandler.java:72) - ERROR : Service is not registered
+06-26 15:38:57.009  1130  1334 E CAE     : onGetSensorHubData(SensorHubParserProvider.java:115) - ERROR : Data field parsing error
+06-26 15:38:57.102  1130  2978 E SemWifiApSmartBleScanner: mGuidScanFilterBluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=117, mManufacturerData=[1, 18, 42, 14, 45, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], mManufacturerDataMask=[0, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null, mTransportBlockFilter=null]
+06-26 15:38:57.119  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: android.uid.system, scannerId: 5, reportDelayMillis=0
+06-26 15:38:57.207  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_STOP, appName: com.google.android.gms, id: 0, isLegacy: true
+06-26 15:38:57.523   780   780 E TimeStats: [21631]-[SurfaceView[NotificationShade]@0(BLAST)#21631]-timeRecords is at its maximum size[64]. Ignore this when unittesting.
+06-26 15:38:57.630  1130  4463 E KioskModeService: There's no matched data
+06-26 15:38:57.853   687   687 E audit   : type=1400 audit(1750963137.848:13067): avc:  denied  { getattr } for  pid=1585 comm="RenderThread" name="/" dev="dmabuf" ino=1 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:57.928  1130  1236 E WindowManager: win=Window{1ebb457 u0 com.sec.android.app.launcher/com.samsung.app.honeyspace.edge.CocktailBarService} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2980 com.android.server.wm.WindowManagerService.relayoutWindow:2685 com.android.server.wm.Session.relayout:282 android.view.IWindowSession$Stub.onTransact:782 com.android.server.wm.Session.onTransact:204 android.os.Binder.execTransactInternal:1375 android.os.Binder.execTransact:1311 
+06-26 15:38:58.288   780  2827 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+06-26 15:38:58.418   759   759 E SecVibrator-HAL-AIDL-EXT: V_5_0: performPrebakedHapticPattern 1 : 4000 : 0
+06-26 15:38:58.421   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setRepeatForForceFeedbackAw]repeat: 0
+06-26 15:38:58.421   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setForceFeedbackAmplitude]amplitude: 4000
+06-26 15:38:58.422   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [uploadForceFeedbackeffect]ioctl success ,uploaded effect with ID: 0
+06-26 15:38:58.422   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1000
+06-26 15:38:58.422   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 1
+06-26 15:38:58.535   759   759 E SecVibrator-HAL-AIDL-CORE: V_2_0: Vibrator off
+06-26 15:38:58.535   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_off
+06-26 15:38:58.535   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 0
+06-26 15:38:58.632   759   759 E SecVibrator-HAL-AIDL-EXT: V_5_0: performPrebakedHapticPattern 1 : 4000 : 0
+06-26 15:38:58.632   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setRepeatForForceFeedbackAw]repeat: 0
+06-26 15:38:58.632   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setForceFeedbackAmplitude]amplitude: 4000
+06-26 15:38:58.633   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [uploadForceFeedbackeffect]ioctl success ,uploaded effect with ID: 0
+06-26 15:38:58.633   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1000
+06-26 15:38:58.634   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 1
+06-26 15:38:58.749   759   759 E SecVibrator-HAL-AIDL-CORE: V_2_0: Vibrator off
+06-26 15:38:58.750   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_off
+06-26 15:38:58.750   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 0
+06-26 15:38:58.912   759   759 E SecVibrator-HAL-AIDL-EXT: V_5_0: performPrebakedHapticPattern 1 : 4000 : 0
+06-26 15:38:58.913   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setRepeatForForceFeedbackAw]repeat: 0
+06-26 15:38:58.913   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setForceFeedbackAmplitude]amplitude: 4000
+06-26 15:38:58.914   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [uploadForceFeedbackeffect]ioctl success ,uploaded effect with ID: 0
+06-26 15:38:58.914   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1000
+06-26 15:38:58.914   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 1
+06-26 15:38:59.022  1130  1334 E CAE     : parse(SensorHubModeHandler.java:72) - ERROR : Service is not registered
+06-26 15:38:59.023  1130  1334 E CAE     : onGetSensorHubData(SensorHubParserProvider.java:115) - ERROR : Data field parsing error
+06-26 15:38:59.031   759   759 E SecVibrator-HAL-AIDL-CORE: V_2_0: Vibrator off
+06-26 15:38:59.031   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_off
+06-26 15:38:59.032   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 0
+06-26 15:38:59.208   759   759 E SecVibrator-HAL-AIDL-EXT: V_5_0: performPrebakedHapticPattern 1 : 4000 : 0
+06-26 15:38:59.209   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setRepeatForForceFeedbackAw]repeat: 0
+06-26 15:38:59.209   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setForceFeedbackAmplitude]amplitude: 4000
+06-26 15:38:59.210   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [uploadForceFeedbackeffect]ioctl success ,uploaded effect with ID: 0
+06-26 15:38:59.216   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1000
+06-26 15:38:59.216   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 1
+06-26 15:38:59.239  1130  1130 E PocketMotionManager: tilt is 1
+06-26 15:38:59.240  1130  1340 E PocketModeEvent: MSG_TYPE_STOP_SENSING
+06-26 15:38:59.241  1130  1340 E PocketModeEvent: unregisterSensor L : -1 P : 0
+06-26 15:38:59.251  1130  1340 E PocketMotionManager: unregister tilt sensor
+06-26 15:38:59.275  1130  1340 E ActivityManager: Sending non-protected broadcast com.samsung.intent.action.RELEASE_POCKET_MODE from system 1130:system/1000 pkg android
+06-26 15:38:59.275  1130  1340 E ActivityManager: java.lang.Throwable
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:17081)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLockedTraced(ActivityManagerService.java:18026)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17169)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17146)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(ActivityManagerService.java:18253)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at android.app.ContextImpl.sendBroadcast(ContextImpl.java:1285)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at com.samsung.android.gesture.PocketModeEvent$1.handleMessage(PocketModeEvent.java:456)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at android.os.Looper.loopOnce(Looper.java:230)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at android.os.Looper.loop(Looper.java:319)
+06-26 15:38:59.275  1130  1340 E ActivityManager: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+06-26 15:38:59.330   759   759 E SecVibrator-HAL-AIDL-CORE: V_2_0: Vibrator off
+06-26 15:38:59.330   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_off
+06-26 15:38:59.330   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 0
+06-26 15:38:59.351  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.367   687   687 E audit   : type=1400 audit(1750963139.364:13068): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:netd:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.367   687   687 E audit   : type=1400 audit(1750963139.364:13069): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:system_suspend:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.367  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.372  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.373  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.375  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.376   687   687 E audit   : type=1400 audit(1750963139.372:13070): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:fabriccrypto:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.378  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.380  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.381  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.382  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.382  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.386  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.390  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.399   687   687 E audit   : type=1400 audit(1750963139.396:13071): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:kumihodecoder:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.400  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.402  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.403  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.408  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.413  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.419  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.420  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.424  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.430  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.433   687   687 E audit   : type=1400 audit(1750963139.432:13072): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:speg_helper_daemon:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.433   687   687 E audit   : type=1400 audit(1750963139.432:13073): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:spqr_service_daemon:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.436  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.437   759   759 E SecVibrator-HAL-AIDL-EXT: V_5_0: performPrebakedHapticPattern 1 : 4000 : 0
+06-26 15:38:59.437   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setRepeatForForceFeedbackAw]repeat: 0
+06-26 15:38:59.437   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setForceFeedbackAmplitude]amplitude: 4000
+06-26 15:38:59.438   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [uploadForceFeedbackeffect]ioctl success ,uploaded effect with ID: 0
+06-26 15:38:59.438   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1000
+06-26 15:38:59.438   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 1
+06-26 15:38:59.438  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.442  9010  9010 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.452   687   687 E audit   : type=1400 audit(1750963139.448:13074): avc:  denied  { call } for  pid=9010 comm="service" scontext=u:r:shell:s0 tcontext=u:r:wificond:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.483 18303 18303 E studio.deploy: ERROR: Could not remove dir '/data/data/com.example.myapplication.debug/code_cache/.ll/': No such file or directory
+06-26 15:38:59.500  1130  1340 E PocketModeEvent: MSG_TYPE_POCKET_RECOGNITION_TIMEOUT
+06-26 15:38:59.559   759   759 E SecVibrator-HAL-AIDL-CORE: V_2_0: Vibrator off
+06-26 15:38:59.559   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_off
+06-26 15:38:59.559   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 0
+06-26 15:38:59.611   759   759 E SecVibrator-HAL-AIDL-EXT: V_5_0: performPrebakedHapticPattern 1 : 4000 : 0
+06-26 15:38:59.611   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setRepeatForForceFeedbackAw]repeat: 0
+06-26 15:38:59.612   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [setForceFeedbackAmplitude]amplitude: 4000
+06-26 15:38:59.612   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [uploadForceFeedbackeffect]ioctl success ,uploaded effect with ID: 0
+06-26 15:38:59.612   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1000
+06-26 15:38:59.613   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 1
+06-26 15:38:59.730   759   759 E SecVibrator-HAL-AIDL-CORE: V_2_0: Vibrator off
+06-26 15:38:59.730   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: do_off
+06-26 15:38:59.730   759   759 E SecVibrator-HAL-AIDL-CORE: HW_API: [triggerForceFeedbackVibration]on: 0
+06-26 15:38:59.753  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90000, delta: -10773
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90001, delta: -3288
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90002, delta: -1222
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90003, delta: -6419
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90005, delta: -2118
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90007, delta: -866
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90008, delta: -5539
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90009, delta: -4387
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90010, delta: -7393
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90011, delta: -2507
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90012, delta: -1663
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90013, delta: -1817
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90014, delta: -2632
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90015, delta: -2147
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90016, delta: -286
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90018, delta: -46
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90019, delta: -1766
+06-26 15:38:59.754  1130  4463 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90020, delta: -9181
+06-26 15:38:59.796  1585  1585 E KeyguardSecAbsKeyInputViewController: onPasswordChecked
+06-26 15:38:59.805  2380  2380 E KNOXCORE::CACHE: clr value {old=1 new:1
+06-26 15:38:59.957  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.976   687   687 E audit   : type=1400 audit(1750963139.972:13075): avc:  denied  { call } for  pid=9031 comm="service" scontext=u:r:shell:s0 tcontext=u:r:netd:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.977  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.977   687   687 E audit   : type=1400 audit(1750963139.972:13076): avc:  denied  { call } for  pid=9031 comm="service" scontext=u:r:shell:s0 tcontext=u:r:system_suspend:s0 tclass=binder permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:38:59.982  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.983  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.985  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.989  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.990  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.991  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.993  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.993  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:38:59.999  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.005  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.016  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.018  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.018  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.024  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.029  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.029  1585  1585 E KeyguardViewMediator: mHideAnimationFinishedRunnable#run
+06-26 15:39:00.036  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.037  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.042  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.048  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.060  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.063  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.069  9031  9031 E Parcel  : Reading a NULL string not supported here.
+06-26 15:39:00.106  1585 17514 E engmode_client_list: Cannot find client
+06-26 15:39:00.106  1585 17514 E engmode_hidl_client_service: Client error
+06-26 15:39:00.123  1585  2701 E BufferQueueProducer: [SurfaceView[NotificationShade]@0#1763(BLAST Consumer)1763](id:631000006e4,api:0,p:-1,c:1585) dequeueBuffer: BufferQueue has been abandoned
+06-26 15:39:00.124   694   702 E engmode_world: Unknown token(00/00/00)
+06-26 15:39:00.129   530   530 E engmode_hidl_service: error to server(0xd0060012)
+06-26 15:39:00.133   737  8910 E ExynosH264DecFilter: [allocOutBuffer] alloc() is failed. ret:0x4
+06-26 15:39:00.151   694   702 E engmode_world: Unknown token(00/00/00)
+06-26 15:39:00.152   530   530 E engmode_hidl_service: error to server(0xd0060012)
+06-26 15:39:00.199  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:00.211  1130  1337 E MotionRecognitionService: Receiver: ACTION_USER_PRESENT - UNLOCK SCREEN
+06-26 15:39:00.227  1130  1509 E ProcessStateTracker: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+06-26 15:39:00.272  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: com.google.uid.shared, scannerId: 6, reportDelayMillis=0
+06-26 15:39:00.297  1130  1337 E MotionRecognitionService: Receiver: ACTION_USER_PRESENT - UNLOCK SCREEN
+06-26 15:39:00.310  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: com.google.uid.shared, scannerId: 7, reportDelayMillis=0
+06-26 15:39:00.336  4711  9077 E AtomicFile: Failed to rename /data/user_de/0/com.samsung.android.honeyboard/files/selected.json.new to /data/user_de/0/com.samsung.android.honeyboard/files/selected.json
+06-26 15:39:00.343  1130  3399 E WindowManager: win=Window{9df1fc7 u0 NotificationShade} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=4 caller=com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2980 com.android.server.wm.WindowManagerService.relayoutWindow:2685 com.android.server.wm.Session.relayout:282 android.view.IWindowSession$Stub.onTransact:782 com.android.server.wm.Session.onTransact:204 android.os.Binder.execTransactInternal:1380 android.os.Binder.execTransact:1311 
+06-26 15:39:00.453  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_STOP, appName: com.google.android.gms, id: 1, isLegacy: true
+06-26 15:39:00.467  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_START, appName: com.google.android.gms, id: 0, isLegacy: true
+06-26 15:39:00.528  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_START, appName: com.google.android.gms, id: 1, isLegacy: true
+06-26 15:39:00.549  1130  1159 E WindowManager: win=Window{b994c06 u0 SnapshotStartingWindow for taskId=4360 EXITING} destroySurfaces: appStopped=false cleanupOnResume=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.WindowState.onExitAnimationDone:5764 com.android.server.wm.WindowStateAnimator.onAnimationFinished:208 com.android.server.wm.WindowState.onAnimationFinished:5995 com.android.server.wm.WindowContainer$$ExternalSyntheticLambda4.onAnimationFinished:0 com.android.server.wm.SurfaceAnimator.lambda$getFinishedCallback$0:140 com.android.server.wm.SurfaceAnimator.$r8$lambda$eYT7rjaBOE8bCIRq043wVzQ_RTM:0 com.android.server.wm.SurfaceAnimator$$ExternalSyntheticLambda1.run:0 
+06-26 15:39:00.566  4711  9110 E AtomicFile: Failed to rename /data/user_de/0/com.samsung.android.honeyboard/files/selected.json.new to /data/user_de/0/com.samsung.android.honeyboard/files/selected.json
+06-26 15:39:00.567  4711  9109 E AtomicFile: Failed to rename /data/user_de/0/com.samsung.android.honeyboard/files/selected.json.new to /data/user_de/0/com.samsung.android.honeyboard/files/selected.json
+06-26 15:39:00.741   780  2827 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+06-26 15:39:01.400  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: com.samsung.android.mcfserver, scannerId: 8, reportDelayMillis=0
+06-26 15:39:01.420   687   687 E audit   : type=1400 audit(1750963141.416:13083): avc:  denied  { search } for  pid=778 comm="perfmond" name="host0" dev="sysfs" ino=67856 scontext=u:r:perfmond:s0 tcontext=u:object_r:sysfs_ski_ufs_writable:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:01.424  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:01.479  4711  9165 E AtomicFile: Failed to rename /data/user_de/0/com.samsung.android.honeyboard/files/selected.json.new to /data/user_de/0/com.samsung.android.honeyboard/files/selected.json
+06-26 15:39:01.545  1130  4186 E WindowManager: win=Window{1979efe u0 com.whatsapp.w4b/com.whatsapp.home.ui.HomeActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6952 com.android.server.wm.ActivityRecord.destroySurfaces:6933 com.android.server.wm.ActivityRecord.activityStopped:7633 com.android.server.wm.ActivityClientController.activityStopped:321 android.app.IActivityClientController$Stub.onTransact:702 com.android.server.wm.ActivityClientController.onTransact:186 android.os.Binder.execTransactInternal:1380 
+06-26 15:39:01.826  1130  2619 E Transition: Trying to add a ready-group twice: Display{#0 state=ON size=1080x2400 ROTATION_0}
+06-26 15:39:01.829  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:01.949   936  3402 E AudioSystem: invalid attributes { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_INVALID Flags: 0x800 Tags:  } when converting to stream
+06-26 15:39:01.952   847  8297 E SEC_DRM_PLUGIN_Omafl: OmaPlugin::onOpenDecryptSession(fd)::Drm2IsDrmFileByExtFd::file is NOT DRM by extension
+06-26 15:39:02.125  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:02.300   780  2827 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+06-26 15:39:02.506  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_ADV_SET_STOP, appName: com.google.android.gms, id: 0, isLegacy: true
+06-26 15:39:02.928  1130  2619 E Transition: Trying to add a ready-group twice: Display{#0 state=ON size=1080x2400 ROTATION_0}
+06-26 15:39:02.931  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:03.328  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:03.734  1130  4440 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-26 15:39:03.734  1130  4440 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-26 15:39:03.836  1130  4416 E WindowManager: win=Window{8ae21a1 u0 com.example.myapplication.debug/com.example.myapplication.MainActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6952 com.android.server.wm.ActivityRecord.destroySurfaces:6933 com.android.server.wm.ActivityRecord.activityStopped:7633 com.android.server.wm.ActivityClientController.activityStopped:321 android.app.IActivityClientController$Stub.onTransact:702 com.android.server.wm.ActivityClientController.onTransact:186 android.os.Binder.execTransactInternal:1380 
+06-26 15:39:05.318  1130  4390 E Transition: Trying to add a ready-group twice: Display{#0 state=ON size=1080x2400 ROTATION_0}
+06-26 15:39:05.320  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:05.454  9075  9075 D CriarNovoArtigo: ­ƒöÆ Configurando listeners e garantindo que atividade permane+ºa aberta
+06-26 15:39:05.568  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:05.683   780  2827 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+06-26 15:39:05.736   729   789 E SensorsHub: AccSensor : Meta event
+06-26 15:39:05.741   729   789 E SensorsHub: GyroSensor : Meta event
+06-26 15:39:06.101  1130  2619 E WindowManager: win=Window{e31e68c u0 com.example.myapplication.debug/com.example.myapplication.SecondScreenActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6952 com.android.server.wm.ActivityRecord.destroySurfaces:6933 com.android.server.wm.ActivityRecord.activityStopped:7633 com.android.server.wm.ActivityClientController.activityStopped:321 android.app.IActivityClientController$Stub.onTransact:702 com.android.server.wm.ActivityClientController.onTransact:186 android.os.Binder.execTransactInternal:1380 
+06-26 15:39:06.342  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_STOP, appName: com.google.uid.shared, scannerId: 6, reportDelayMillis=0
+06-26 15:39:06.370  1959  2483 E BtGatt.GattService: [GSIM LOG]: gsimLogHandler, msg: MESSAGE_SCAN_START, appName: com.google.uid.shared, scannerId: 6, reportDelayMillis=0
+06-26 15:39:06.430  4711  4711 I HBD     : e mIsGalaxyTheme = false mIsDexDesktopDisplay : false IsRequiredDarkTypeTheme = true night mode : true mIsEnabledHighContrast = false mIsOpenThemeForHoneyBoardInstalled = false mIsWallpaperThemeInstalled = false mIsThemeParkTheme = false
+06-26 15:39:06.431  4711  4711 I HBD     : e onUpdate: mThemeStyle = 4 
+06-26 15:39:06.444  4711  4711 I HBD     : e [PF_OP][updateKeyboardViewHolder]  5 ms 
+06-26 15:39:06.563  4711 25221 I HBD     : e [AiWriter] updateChildAccountInfo reset
+06-26 15:39:06.563  4711 25221 I HBD     : e [AiWriter] setCurrentCc resetCcAndLegalAge
+06-26 15:39:06.566  3970  3970 E [PASS][SPAF]AutofillService: No valid parsed autofill fields
+06-26 15:39:06.785  1130  5310 E WindowManager: win=Window{1ebb457 u0 com.sec.android.app.launcher/com.samsung.app.honeyspace.edge.CocktailBarService} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2980 com.android.server.wm.WindowManagerService.relayoutWindow:2685 com.android.server.wm.Session.relayout:282 android.view.IWindowSession$Stub.onTransact:782 com.android.server.wm.Session.onTransact:204 android.os.Binder.execTransactInternal:1375 android.os.Binder.execTransact:1311 
+06-26 15:39:06.883   745   779 E BatteryDump: !@new_battery_dump : 3601,-2055,100,100,4,323,322,391,0,0,331,391,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:39:06.907  1585 26930 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:39:06.950  4711  4711 I HBD     : e vib is off 
+06-26 15:39:07.317  1130  1159 E WindowManager: win=Window{4cbdec9 u0 PopupWindow:13e621b EXITING} destroySurfaces: appStopped=false cleanupOnResume=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.WindowState.onExitAnimationDone:5764 com.android.server.wm.WindowStateAnimator.onAnimationFinished:208 com.android.server.wm.WindowState.onAnimationFinished:5995 com.android.server.wm.WindowContainer$$ExternalSyntheticLambda4.onAnimationFinished:0 com.android.server.wm.SurfaceAnimator.lambda$getFinishedCallback$0:140 com.android.server.wm.SurfaceAnimator.$r8$lambda$eYT7rjaBOE8bCIRq043wVzQ_RTM:0 com.android.server.wm.SurfaceAnimator$$ExternalSyntheticLambda1.run:0 
+06-26 15:39:07.327  1130  1159 E WindowManager: win=Window{ae947fc u0 PopupWindow:11a8f64 EXITING} destroySurfaces: appStopped=false cleanupOnResume=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.WindowState.onExitAnimationDone:5764 com.android.server.wm.WindowStateAnimator.onAnimationFinished:208 com.android.server.wm.WindowState.onAnimationFinished:5995 com.android.server.wm.WindowContainer$$ExternalSyntheticLambda4.onAnimationFinished:0 com.android.server.wm.SurfaceAnimator.lambda$getFinishedCallback$0:140 com.android.server.wm.SurfaceAnimator.$r8$lambda$eYT7rjaBOE8bCIRq043wVzQ_RTM:0 com.android.server.wm.SurfaceAnimator$$ExternalSyntheticLambda1.run:0 
+06-26 15:39:08.142  4711  4711 I HBD     : e unbindCurrentHoneyBoard : text_board 
+06-26 15:39:08.142  4711  4711 I HBD     : e expression state[false], searchState[0] 
+06-26 15:39:08.223   780  2827 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+06-26 15:39:08.323  1130  4440 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-26 15:39:08.324  1130  4440 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-26 15:39:08.714  1130  4186 E WindowManager: win=Window{4735537 u0 InputMethod} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2980 com.android.server.wm.WindowManagerService.relayoutWindow:2685 com.android.server.wm.Session.relayout:282 android.view.IWindowSession$Stub.onTransact:782 com.android.server.wm.Session.onTransact:204 android.os.Binder.execTransactInternal:1375 android.os.Binder.execTransact:1311 
+06-26 15:39:09.438  1130  4186 E Transition: Trying to add a ready-group twice: Display{#0 state=ON size=1080x2400 ROTATION_0}
+06-26 15:39:09.439  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:09.521  9075  9075 D CriarNovoArtigo: ­ƒöÆ Configurando listeners e garantindo que atividade permane+ºa aberta
+06-26 15:39:09.610  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:09.748   780  2827 E NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::acquire()
+06-26 15:39:09.840  1795  2895 E EPDG -- [IPSECADAPTER_ERIS]: checkConnection cid (17 ) - timeout : 5
+06-26 15:39:09.851  1795  2895 E EPDG -- [IPSECADAPTER_ERIS]: checkConnection cid (2 ) - timeout : 5
+06-26 15:39:10.168  9075  9075 D SecondScreen: Salvando no Room e fechando atividade
+06-26 15:39:10.238  1130  2424 E Transition: Trying to add a ready-group twice: Display{#0 state=ON size=1080x2400 ROTATION_0}
+06-26 15:39:10.239  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:10.246  1130  4477 E WindowManager: win=Window{e31e68c u0 com.example.myapplication.debug/com.example.myapplication.SecondScreenActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6952 com.android.server.wm.ActivityRecord.destroySurfaces:6933 com.android.server.wm.ActivityRecord.activityStopped:7633 com.android.server.wm.ActivityClientController.activityStopped:321 android.app.IActivityClientController$Stub.onTransact:702 com.android.server.wm.ActivityClientController.onTransact:186 android.os.Binder.execTransactInternal:1380 
+06-26 15:39:10.487  3111  3111 E pageboostd: Received HALT command code 2
+06-26 15:39:11.008  1130  2424 E WindowManager: win=Window{19325e9 u0 com.example.myapplication.debug/com.example.myapplication.CriarNovoArtigoActivityRoom} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6952 com.android.server.wm.ActivityRecord.destroySurfaces:6933 com.android.server.wm.ActivityRecord.activityStopped:7633 com.android.server.wm.ActivityClientController.activityStopped:321 android.app.IActivityClientController$Stub.onTransact:702 com.android.server.wm.ActivityClientController.onTransact:186 android.os.Binder.execTransactInternal:1380 
+06-26 15:39:12.059  1130  4440 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-26 15:39:12.060  1130  4440 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-26 15:39:12.277   729   789 E SensorsHub: AccSensor : Meta event
+06-26 15:39:12.281   729   789 E SensorsHub: GyroSensor : Meta event
+06-26 15:39:12.714  9277  9277 E android.dqagent: Not starting debugger since process cannot load the jdwp agent.
+06-26 15:39:16.916   745   779 E BatteryDump: !@new_battery_dump : 3628,-345,100,100,4,323,323,381,0,0,332,381,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:39:16.930  1585 27807 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:39:18.003   687   687 E audit   : type=1400 audit(1750963158.000:13084): avc:  denied  { getattr } for  pid=6200 comm="Thread-190" path="/system/lib/bootstrap" dev="dm-6" ino=72269434 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:18.007   687   687 E audit   : type=1400 audit(1750963158.004:13085): avc:  denied  { search } for  pid=6200 comm="Thread-190" name="/" dev="dm-8" ino=38 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_dlkm_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:18.027   687   687 E audit   : type=1400 audit(1750963158.024:13086): avc:  denied  { getattr } for  pid=6200 comm="Thread-190" path="/system/lib64/bootstrap" dev="dm-6" ino=72090360 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:18.763  1130  1161 E Watchdog: !@Sync: 1209 heap: 135 / 141 FD: 1222 [2025-06-26 15:39:18.762]
+06-26 15:39:26.675 12916 16745 E msys    : E[N WA]WCCXMPPStreamDisconnectImmediately(676)=>[WARNING] xmpp/disconnect/immediate in state=2 reason=xmpp/idle/timeout
+06-26 15:39:26.675 12916 13254 E MvfstCallbacks.cpp: readError: streamid=3; error=LocalError: Idle timeout, Idle timeout, num non control streams: 3
+06-26 15:39:26.675 12916 13254 E MvfstCallbacks.cpp: readError: streamid=7; error=LocalError: Idle timeout, Idle timeout, num non control streams: 3
+06-26 15:39:26.675 12916 13254 E MvfstCallbacks.cpp: readError: streamid=11; error=LocalError: Idle timeout, Idle timeout, num non control streams: 3
+06-26 15:39:26.675 12916 13254 E MvfstCallbacks.cpp: onConnectionError: error=LocalError: Idle timeout, Idle timeout, num non control streams: 3
+06-26 15:39:26.676 12916 13365 E MvfstCallbacks.cpp: readError: streamid=4; error=LocalError: Idle timeout, Idle timeout, num non control streams: 4
+06-26 15:39:26.676 12916 13365 E MvfstCallbacks.cpp: readError: streamid=3; error=LocalError: Idle timeout, Idle timeout, num non control streams: 4
+06-26 15:39:26.676 12916 13365 E MvfstCallbacks.cpp: readError: streamid=7; error=LocalError: Idle timeout, Idle timeout, num non control streams: 4
+06-26 15:39:26.676 12916 13365 E MvfstCallbacks.cpp: readError: streamid=11; error=LocalError: Idle timeout, Idle timeout, num non control streams: 4
+06-26 15:39:26.676 12916 13365 E MvfstCallbacks.cpp: onConnectionError: error=LocalError: Idle timeout, Idle timeout, num non control streams: 4
+06-26 15:39:26.681 12916 16845 E msys    : E[N mccw.liger]onReadError(732)=>read/error - ex: AsyncSocketException: recv() failed (peer=57.144.164.36:5222), type = Internal error, errno = 103 (Software caused connection abort), errno: 103
+06-26 15:39:26.687 12916 16745 E msys    : E[N WA]_WCCXMPPStreamDisconnectHandler(300)=>xmpp/disconnect - WCIStreamStateErrorCode: 1, domain: WCIStreamState, subdomain: happyeyeballs: Error Domain=WCIStreamState Code=1 UserInfo=0xb4000070d68cd6b0 {MCFErrorDirectUnderlyingErrorKey=0xb4000071668c8890 "Error Domain=happyeyeballs Code=1"}
+06-26 15:39:26.687 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/not-connected, [426.3977s]
+06-26 15:39:26.687 12916 16745 E msys    : E[N WA]_WCCXMPPStreamDoDisconnect(1051)=>xmpp/disconnect - flags: 0
+06-26 15:39:26.687 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultEmitStateChange(2939)=>[INFO] connection/new_state/not-connected [connection_id=1038875554, wcc_source=1, wcc_reason=0]
+06-26 15:39:26.690 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultDisconnectHandler(2091)=>[INFO] connection/disconnected/[did-connect, did-read-bytes]
+06-26 15:39:26.694 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultEmitStateChange(2939)=>[INFO] connection/new_state/connecting [connection_id=1038875555, wcc_source=1, wcc_reason=0]
+06-26 15:39:26.696 12916 13365 E msys    : E[N mns]_OnDiskCacheGetData(542)=>Start post callback cache refresh DNS resolution
+06-26 15:39:26.705 12916 13254 E msys    : E[N mns]_OnDiskCacheGetData(542)=>Start post callback cache refresh DNS resolution
+06-26 15:39:26.707 12916 13365 E msys    : E[N mns]_OnSystemDNSSuccessCallback(314)=>Cache refresh succeeded with system DNS resolver. IP count: 1
+06-26 15:39:26.714 12916 13254 E msys    : E[N mns]_OnSystemDNSSuccessCallback(314)=>Cache refresh succeeded with system DNS resolver. IP count: 1
+06-26 15:39:26.733 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultDoConnectWithAuthKeys(1436)=>[INFO] connection/connect/start/[host=z-p42-chat-e2ee-ig.facebook.com port=5222]/[57.144.164.36:5222]
+06-26 15:39:26.734 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1960)=>[INFO] connection/xmpp/lifecycle_event/will-connect
+06-26 15:39:26.764 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/did-connect, [0.0290s]
+06-26 15:39:26.769 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/did-send-initial-payload, [0.0049s]
+06-26 15:39:26.934 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/will-handshake, [0.1649s]
+06-26 15:39:26.936 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/did-handshake, [0.0019s]
+06-26 15:39:26.954 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultReceiveHandler(2120)=>[INFO] connection/receive/login-success
+06-26 15:39:26.954 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultEmitStateChange(2939)=>[INFO] connection/new_state/connected [connection_id=1038875555, wcc_source=1, wcc_reason=0]
+06-26 15:39:26.959   745   779 E BatteryDump: !@new_battery_dump : 3620,-1201,100,100,4,324,323,372,0,0,339,372,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:39:26.988  1585 29009 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:39:27.004 12916 13254 E msys    : E[N mns]_OnDiskCacheGetData(542)=>Start post callback cache refresh DNS resolution
+06-26 15:39:27.012 12916 13254 E msys    : E[N mns]_OnSystemDNSSuccessCallback(314)=>Cache refresh succeeded with system DNS resolver. IP count: 1
+06-26 15:39:27.098   687   687 E audit   : type=1400 audit(1750963167.096:13087): avc:  denied  { write } for  pid=9347 comm="elastic_global-" name="fd" dev="proc" ino=7386016 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:27.098   687   687 E audit   : type=1400 audit(1750963167.096:13088): avc:  denied  { write } for  pid=9347 comm="elastic_global-" name="fd" dev="proc" ino=7386016 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:27.304  9347  9453 E deo:pushservice: No package ID 6a found for resource ID 0x6a0b000f.
+06-26 15:39:27.343   687   687 E audit   : type=1400 audit(1750963167.340:13089): avc:  denied  { getattr } for  pid=6200 comm="Thread-191" path="/system/lib/bootstrap" dev="dm-6" ino=72269434 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:27.347   687   687 E audit   : type=1400 audit(1750963167.344:13090): avc:  denied  { search } for  pid=6200 comm="Thread-191" name="/" dev="dm-8" ino=38 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_dlkm_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:27.353   687   687 E audit   : type=1400 audit(1750963167.352:13091): avc:  denied  { getattr } for  pid=6200 comm="Thread-191" path="/system/lib64/bootstrap" dev="dm-6" ino=72090360 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:27.436   687   687 E audit   : type=1400 audit(1750963167.432:13092): avc:  denied  { read } for  pid=6200 comm="Thread-191" name="sdcard" dev="tmpfs" ino=36 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:mnt_sdcard_file:s0 tclass=lnk_file permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:28.106   687   687 E audit   : type=1400 audit(1750963168.104:13094): avc:  denied  { search } for  pid=9347 comm="securityaio_sg_" name="abox" dev="proc" ino=4026533045 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:object_r:proc_abox:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:28.106   687   687 E audit   : type=1400 audit(1750963168.104:13095): avc:  denied  { search } for  pid=9347 comm="securityaio_sg_" name="audio" dev="proc" ino=4026532640 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:object_r:proc_audio:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:28.107   687   687 E audit   : type=1400 audit(1750963168.104:13096): avc:  denied  { search } for  pid=9347 comm="securityaio_sg_" name="fslog" dev="proc" ino=4026532125 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:object_r:proc_fslog:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:28.107   687   687 E audit   : type=1400 audit(1750963168.104:13097): avc:  denied  { search } for  pid=9347 comm="securityaio_sg_" name="fslog" dev="proc" ino=4026532125 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:object_r:proc_fslog:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:28.107   687   687 E audit   : type=1400 audit(1750963168.104:13098): avc:  denied  { search } for  pid=9347 comm="securityaio_sg_" name="asound" dev="proc" ino=4026531984 scontext=u:r:untrusted_app:s0:c55,c257,c512,c768 tcontext=u:object_r:proc_asound:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:29.758 12916 13254 E msys    : E[N mns]_OnDiskCacheGetData(542)=>Start post callback cache refresh DNS resolution
+06-26 15:39:29.770 12916 13254 E msys    : E[N mns]_OnSystemDNSSuccessCallback(314)=>Cache refresh succeeded with system DNS resolver. IP count: 1
+06-26 15:39:29.783 12916 24519 E IdleQueuePayloadBasedServiceLayer: Request empty, but still some servings left: 189904
+06-26 15:39:29.869 12916 10544 E IdleQueuePayloadBasedServiceLayer: Request empty, but still some servings left: -94774
+06-26 15:39:29.915 12916 10544 E IdleQueuePayloadBasedServiceLayer: Request empty, but still some servings left: -95130
+06-26 15:39:30.428  9347  9392 E SensorManager: sensor or listener is null
+06-26 15:39:30.428  9347  9392 E SensorManager: sensor or listener is null
+06-26 15:39:34.350   687   687 E audit   : type=1400 audit(1750963174.348:13127): avc:  denied  { search } for  pid=6200 comm="Thread-194" name="fslog" dev="proc" ino=4026532125 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:proc_fslog:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:34.351   687   687 E audit   : type=1400 audit(1750963174.348:13128): avc:  denied  { search } for  pid=6200 comm="Thread-194" name="fslog" dev="proc" ino=4026532125 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:proc_fslog:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:37.054   745   779 E BatteryDump: !@new_battery_dump : 3632,-275,100,100,4,324,323,373,0,0,338,373,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:39:37.094  1585 29209 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:39:41.903   687   687 E audit   : type=1400 audit(1750963181.900:13129): avc:  denied  { getattr } for  pid=6200 comm="Thread-197" path="/system/lib/bootstrap" dev="dm-6" ino=72269434 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:41.907   687   687 E audit   : type=1400 audit(1750963181.904:13130): avc:  denied  { search } for  pid=6200 comm="Thread-197" name="/" dev="dm-8" ino=38 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_dlkm_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:41.926   687   687 E audit   : type=1400 audit(1750963181.924:13131): avc:  denied  { getattr } for  pid=6200 comm="Thread-197" path="/system/lib64/bootstrap" dev="dm-6" ino=72090360 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:39:47.121   745   779 E BatteryDump: !@new_battery_dump : 3632,-164,100,100,4,324,324,368,0,0,338,368,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:39:47.175  1585  3003 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:39:48.780  1130  1161 E Watchdog: !@Sync: 1210 heap: 136 / 139 FD: 1202 [2025-06-26 15:39:48.779]
+06-26 15:39:57.211   745   779 E BatteryDump: !@new_battery_dump : 3634,-162,100,100,4,324,324,363,0,0,337,363,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:39:57.252  1585  3200 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90000, delta: -10773
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90001, delta: -3288
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90002, delta: -1222
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90003, delta: -6417
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90005, delta: -2118
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90007, delta: -866
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90008, delta: -5539
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90009, delta: -4387
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90010, delta: -7393
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90011, delta: -2507
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90012, delta: -1663
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90013, delta: -1817
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90014, delta: -2632
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90015, delta: -2147
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90016, delta: -286
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90018, delta: -46
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90019, delta: -1766
+06-26 15:39:59.927  1130  4186 E KernelCpuUidFullTimeReader: Negative delta from freq time for uid: 90020, delta: -9181
+06-26 15:40:06.085 31089 31102 E word_detector_0: RecordingActivityTracker(): binding to audio service failed, service up?
+06-26 15:40:06.092   766  1126 E AudioEffectStageHandle: command DEAD_OBJECT
+06-26 15:40:06.122 12916 16845 E msys    : E[N mccw.liger]onReadError(732)=>read/error - ex: AsyncSocketException: recv() failed (peer=57.144.164.36:5222), type = Internal error, errno = 103 (Software caused connection abort), errno: 103
+06-26 15:40:06.125 12916 16745 E msys    : E[N WA]_WCCXMPPStreamDisconnectHandler(300)=>xmpp/disconnect - WCIStreamStateErrorCode: 2, domain: WCIStreamState, subdomain: MCCWLigerStream: Error Domain=WCIStreamState Code=2 UserInfo=0xb4000070d688b2b0 {MCFErrorDirectUnderlyingErrorKey=0xb400007166afba10 "Error Domain=MCCWLigerStream Code=2 UserInfo=0xb4000070d702a660 {MCFErrorDirectLocalizedFailureReasonKey=AsyncSocketException: recv() failed (peer=57.144.164.36:5222), type = Internal error, errno = 103 (Software caused connection abort)}"}
+06-26 15:40:06.125 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/not-connected, [39.1892s]
+06-26 15:40:06.125 12916 16745 E msys    : E[N WA]_WCCXMPPStreamDoDisconnect(1051)=>xmpp/disconnect - flags: 256
+06-26 15:40:06.125 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultDisconnectHandler(2066)=>connection/disconnected, peer reset
+06-26 15:40:06.125 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultEmitStateChange(2939)=>[INFO] connection/new_state/not-connected [connection_id=1038875555, wcc_source=1, wcc_reason=18]
+06-26 15:40:06.129 12916 16745 E msys    : E[C 1]MCCLogErrorWithTraceOrQPL(274)=>8/374/3970/65536
+06-26 15:40:06.130 12916 16745 E msys    : E[C 1]MCCLogErrorWithTraceOrQPL(274)=>8/374/3972/18
+06-26 15:40:06.130 12916 16745 E msys    : E[C mem.context]_LogConnectFailure(4997)=>Establishing connection failure reason and flags: disconnect/Doze/-1/reason/18/flags/65536/[-, -, -, -, -, -, -, -, -, peer_reset, -]
+06-26 15:40:06.131 12916 16745 E msys    : E[C mem.context]_LogConnectFailure(5031)=>[Happy Eyeball] Connect failed with source=1, winner stream ip=57.144.164.36, port=5222, dnsResolutionMethod=1, combined_ip_addresses=57.144.164.36
+06-26 15:40:06.132 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultDisconnectHandler(2091)=>[INFO] connection/disconnected/[did-connect, did-read-bytes]
+06-26 15:40:06.133 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultEmitStateChange(2939)=>[INFO] connection/new_state/connecting [connection_id=1038875556, wcc_source=1, wcc_reason=18]
+06-26 15:40:06.145 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultDoConnectWithAuthKeys(1436)=>[INFO] connection/connect/start/[host=z-p42-chat-e2ee-ig.facebook.com port=5222]/[57.144.164.36:5222]
+06-26 15:40:06.145 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1960)=>[INFO] connection/xmpp/lifecycle_event/will-connect
+06-26 15:40:06.177 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/did-connect, [0.0318s]
+06-26 15:40:06.183 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/did-send-initial-payload, [0.0055s]
+06-26 15:40:06.344 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/will-handshake, [0.1601s]
+06-26 15:40:06.346 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultLifecycleEventHandler(1968)=>[INFO] connection/xmpp/lifecycle_event/did-handshake, [0.0022s]
+06-26 15:40:06.354 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultReceiveHandler(2120)=>[INFO] connection/receive/login-success
+06-26 15:40:06.354 12916 16745 E msys    : E[N WA]_WCCConnectionDefaultEmitStateChange(2939)=>[INFO] connection/new_state/connected [connection_id=1038875556, wcc_source=1, wcc_reason=18]
+06-26 15:40:07.010   687   687 E audit   : type=1400 audit(1750963207.008:13132): avc:  denied  { getattr } for  pid=6200 comm="Thread-202" path="/system/lib/bootstrap" dev="dm-6" ino=72269434 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:07.015   687   687 E audit   : type=1400 audit(1750963207.012:13133): avc:  denied  { search } for  pid=6200 comm="Thread-202" name="/" dev="dm-8" ino=38 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_dlkm_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:07.034   687   687 E audit   : type=1400 audit(1750963207.032:13134): avc:  denied  { getattr } for  pid=6200 comm="Thread-202" path="/system/lib64/bootstrap" dev="dm-6" ino=72090360 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:07.244   745   779 E BatteryDump: !@new_battery_dump : 3599,-672,100,100,4,325,324,366,0,0,335,366,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:40:07.267  1585 19322 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:40:17.309   745   779 E BatteryDump: !@new_battery_dump : 3644,-256,100,100,4,325,325,364,0,0,335,364,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:40:17.351  1585 28102 E SecPowerUI.Notification: no saved value, so we do nothing !!
+06-26 15:40:18.794  1130  1161 E Watchdog: !@Sync: 1211 heap: 126 / 139 FD: 1198 [2025-06-26 15:40:18.793]
+06-26 15:40:21.352   687   687 E audit   : type=1400 audit(1750963221.348:13135): avc:  denied  { getattr } for  pid=6200 comm="Thread-203" path="/system/lib/bootstrap" dev="dm-6" ino=72269434 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:21.357   687   687 E audit   : type=1400 audit(1750963221.352:13136): avc:  denied  { search } for  pid=6200 comm="Thread-203" name="/" dev="dm-8" ino=38 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_dlkm_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:21.361   687   687 E audit   : type=1400 audit(1750963221.360:13137): avc:  denied  { getattr } for  pid=6200 comm="Thread-203" path="/system/lib64/bootstrap" dev="dm-6" ino=72090360 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:system_bootstrap_lib_file:s0 tclass=dir permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:21.435   687   687 E audit   : type=1400 audit(1750963221.432:13138): avc:  denied  { read } for  pid=6200 comm="Thread-203" name="sdcard" dev="tmpfs" ino=36 scontext=u:r:untrusted_app:s0:c208,c257,c512,c768 tcontext=u:object_r:mnt_sdcard_file:s0 tclass=lnk_file permissive=0 SEPF_SM-M546B_13_0001 audit_filtered
+06-26 15:40:27.358   745   779 E BatteryDump: !@new_battery_dump : 3644,-455,100,100,4,325,325,361,0,0,335,361,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,9900,0x40000000,0x10000,0x0,0,0,0000,0000,00000000,0,0,0,0,452,3638,460,990,0,
+06-26 15:40:27.387  1585 26930 E SecPowerUI.Notification: no saved value, so we do nothing !!

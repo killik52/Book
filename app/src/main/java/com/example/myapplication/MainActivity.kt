@@ -229,7 +229,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.homeIcon.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
         }
@@ -372,7 +371,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        "onResume chamado".logDebug("MainActivity")
+        "onResume chamado - MainActivity recebeu foco".logDebug("MainActivity")
         viewModel.carregarFaturas()
     }
 
@@ -473,7 +472,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun openSecondScreen() {
         val intent = Intent(this, SecondScreenActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
         startActivity(intent)
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
     }

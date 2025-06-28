@@ -101,20 +101,6 @@ class SecondScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d("SecondScreen", "onCreate chamado")
         
-        // Verificar se a atividade está sendo reaberta automaticamente
-        if (intent.flags and Intent.FLAG_ACTIVITY_REORDER_TO_FRONT != 0) {
-            Log.d("SecondScreen", "Atividade sendo reaberta automaticamente, finalizando")
-            finish()
-            return
-        }
-        
-        // Verificar se a atividade está sendo reaberta após ser fechada
-        if (intent.getBooleanExtra("REOPENED_AFTER_FINISH", false)) {
-            Log.d("SecondScreen", "Atividade reaberta após ser fechada, finalizando")
-            finish()
-            return
-        }
-        
         binding = ActivitySecondScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -182,6 +168,8 @@ class SecondScreenActivity : AppCompatActivity() {
             artigosList,
             { position ->
                 val artigo = artigosList[position]
+                Log.d("SecondScreen", "Clicou em artigo para editar: ID=${artigo.id}, Nome='${artigo.nome}', Quantidade=${artigo.quantidade}")
+                
                 val intent = Intent(this, CriarNovoArtigoActivityRoom::class.java).apply {
                     putExtra("artigo_id", artigo.id)
                     putExtra("nome_artigo", artigo.nome)
@@ -191,6 +179,8 @@ class SecondScreenActivity : AppCompatActivity() {
                     putExtra("numero_serial", artigo.numeroSerial)
                     putExtra("descricao", artigo.descricao)
                 }
+                
+                Log.d("SecondScreen", "Enviando para CriarNovoArtigoActivityRoom: artigo_id=${artigo.id}, nome='${artigo.nome}'")
                 startActivityForResult(intent, CRIAR_NOVO_ARTIGO_REQUEST_CODE)
             },
             { position ->
@@ -874,10 +864,16 @@ class SecondScreenActivity : AppCompatActivity() {
         currentYPosition += itemSpacingTotals
         currentYPosition += 4f
 
-        currentCanvas.drawText("Saldo Devedor:", totalXPosition, currentYPosition + saldoDevedorPaint.textSize*0.3f, saldoDevedorPaint)
-        val saldoText = decimalFormat.format(artigosList.sumOf { it.preco } - descontoValor + taxaEntrega)
-        currentCanvas.drawText(saldoText, valueAlignX - saldoDevedorPaint.measureText(saldoText), currentYPosition + saldoDevedorPaint.textSize*0.3f, saldoDevedorPaint)
-        currentYPosition += saldoDevedorPaint.textSize + 10f
+        // Calcular o saldo devedor
+        val saldoDevedor = artigosList.sumOf { it.preco } - descontoValor + taxaEntrega
+        val saldoText = decimalFormat.format(saldoDevedor)
+        
+        // Ajustar tamanho da fonte do "Saldo Devedor" conforme o valor
+        val adjustedSaldoPaint = adjustSaldoPaintForPdf(saldoDevedorPaint, saldoText, valueAlignX - totalXPosition)
+        
+        currentCanvas.drawText("Saldo Devedor:", totalXPosition, currentYPosition + adjustedSaldoPaint.textSize*0.3f, adjustedSaldoPaint)
+        currentCanvas.drawText(saldoText, valueAlignX - adjustedSaldoPaint.measureText(saldoText), currentYPosition + adjustedSaldoPaint.textSize*0.3f, adjustedSaldoPaint)
+        currentYPosition += adjustedSaldoPaint.textSize + 10f
 
         val instrucoesPagamentoPrefs = getSharedPreferences("InstrucoesPagamentoPrefs", Context.MODE_PRIVATE)
         val pix = instrucoesPagamentoPrefs.getString("instrucoes_pix", "")
@@ -1450,6 +1446,7 @@ class SecondScreenActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         Log.d("SecondScreen", "onBackPressed disparado.")
+        Log.d("SecondScreen", "Estado atual: nomeClienteSalvo='$nomeClienteSalvo', artigosList.size=${artigosList.size}, isFaturaSaved=$isFaturaSaved")
         
         // Verificar se há dados para salvar
         val podeSalvar = !nomeClienteSalvo.isNullOrEmpty() &&
@@ -1462,7 +1459,8 @@ class SecondScreenActivity : AppCompatActivity() {
             saveFatura(finalizarActivityAposSalvar = true)
         } else {
             Log.d("SecondScreen", "onBackPressed: Finalizando atividade sem salvar.")
-            // Finalizar a atividade imediatamente
+            Log.d("SecondScreen", "onBackPressed: Chamando finish() para voltar à MainActivity")
+            // Finalizar a atividade e voltar para a MainActivity
             finish()
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
         }
@@ -1547,6 +1545,7 @@ class SecondScreenActivity : AppCompatActivity() {
                     }
                 }
                 ARQUIVOS_RECENTES_REQUEST_CODE, CRIAR_NOVO_ARTIGO_REQUEST_CODE -> {
+                    Log.d("SecondScreen", "🔄 === RETORNO DE CRIAR_NOVO_ARTIGO ===")
                     data?.let {
                         val artigoIdRetornado = it.getLongExtra("artigo_id", -1L)
                         val nomeArtigo = it.getStringExtra("nome_artigo")
@@ -1555,23 +1554,49 @@ class SecondScreenActivity : AppCompatActivity() {
                         val numeroSerial = it.getStringExtra("numero_serial")
                         val descricao = it.getStringExtra("descricao")
 
+                        Log.d("SecondScreen", "📥 Recebido retorno: ID=$artigoIdRetornado, Nome='$nomeArtigo', Qtd=$quantidade")
+
                         if (!nomeArtigo.isNullOrEmpty()) {
-                            val idArtigoParaLista = artigoIdRetornado
-                            val existingArtigoIndex = artigosList.indexOfFirst { item -> item.id == artigoIdRetornado && artigoIdRetornado > 0 }
+                            // Estratégia de busca: primeiro por ID válido, depois por nome
+                            var existingArtigoIndex = -1
+                            
+                            if (artigoIdRetornado > 0) {
+                                // Se tem ID válido, procurar pelo ID primeiro
+                                existingArtigoIndex = artigosList.indexOfFirst { item -> 
+                                    item.id == artigoIdRetornado 
+                                }
+                                Log.d("SecondScreen", "🔍 Buscando por ID $artigoIdRetornado: encontrado na posição $existingArtigoIndex")
+                            }
+                            
+                            if (existingArtigoIndex == -1) {
+                                // Se não encontrou por ID, procurar por nome (para artigos temporários)
+                                existingArtigoIndex = artigosList.indexOfFirst { item -> 
+                                    item.nome == nomeArtigo 
+                                }
+                                Log.d("SecondScreen", "🔍 Buscando por nome '$nomeArtigo': encontrado na posição $existingArtigoIndex")
+                            }
+                            
                             if (existingArtigoIndex != -1) {
-                                // Corrigido: Usando os nomes corretos dos parâmetros do construtor de ArtigoItem
-                                artigosList[existingArtigoIndex] = ArtigoItem(artigoIdRetornado, nomeArtigo, quantidade = quantidade, preco = precoTotalItem, numeroSerial = numeroSerial, descricao = descricao)
+                                // Atualizar artigo existente
+                                val artigoAtualizado = ArtigoItem(artigoIdRetornado, nomeArtigo, quantidade = quantidade, preco = precoTotalItem, numeroSerial = numeroSerial, descricao = descricao)
+                                artigosList[existingArtigoIndex] = artigoAtualizado
                                 artigoAdapter.notifyItemChanged(existingArtigoIndex)
-                                Log.d("SecondScreen", "Artigo ID $artigoIdRetornado atualizado na lista.")
+                                Log.d("SecondScreen", "✅ Artigo atualizado na posição $existingArtigoIndex: ID=$artigoIdRetornado, Nome='$nomeArtigo'")
                             } else {
-                                // Corrigido: Usando os nomes corretos dos parâmetros do construtor de ArtigoItem
-                                artigosList.add(ArtigoItem(idArtigoParaLista, nomeArtigo, quantidade = quantidade, preco = precoTotalItem, numeroSerial = numeroSerial, descricao = descricao))
-                                artigoAdapter.notifyItemInserted(artigosList.size - 1)
-                                Log.d("SecondScreen", "Novo artigo adicionado à lista. ID na lista: $idArtigoParaLista, Nome: $nomeArtigo")
+                                // Adicionar novo artigo no topo da lista
+                                val novoArtigo = ArtigoItem(artigoIdRetornado, nomeArtigo, quantidade = quantidade, preco = precoTotalItem, numeroSerial = numeroSerial, descricao = descricao)
+                                artigosList.add(0, novoArtigo)
+                                artigoAdapter.notifyItemInserted(0)
+                                Log.d("SecondScreen", "➕ Novo artigo adicionado no topo: ID=$artigoIdRetornado, Nome='$nomeArtigo'")
                             }
                             updateSubtotal()
                             isFaturaSaved = false
+                            Log.d("SecondScreen", "🔄 === FIM RETORNO DE CRIAR_NOVO_ARTIGO ===")
+                        } else {
+                            Log.w("SecondScreen", "⚠️ Nome do artigo está vazio, ignorando retorno")
                         }
+                    } ?: run {
+                        Log.w("SecondScreen", "⚠️ Data é null no retorno de CriarNovoArtigo")
                     }
                 }
                 THIRD_SCREEN_REQUEST_CODE -> {
@@ -1671,7 +1696,6 @@ class SecondScreenActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_VIEW).apply {
             setDataAndType(uri, "application/pdf")
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
         }
         try {
             startActivity(intent)
@@ -1982,6 +2006,51 @@ class SecondScreenActivity : AppCompatActivity() {
                 clienteIdSalvo = -1L
             }
         }
+        
+        // Processar dados do artigo se recebidos via Intent
+        val nomeArtigo = intent?.getStringExtra("nome_artigo")
+        val quantidade = intent?.getIntExtra("quantidade", 1) ?: 1
+        val valorTotal = intent?.getDoubleExtra("valor", 0.0) ?: 0.0
+        val numeroSerial = intent?.getStringExtra("numero_serial")
+        val descricao = intent?.getStringExtra("descricao")
+        val artigoId = intent?.getLongExtra("artigo_id", -1L) ?: -1L
+        
+        if (!nomeArtigo.isNullOrEmpty()) {
+            Log.d("SecondScreen", "Dados do artigo recebidos via Intent: nome='$nomeArtigo', qtd=$quantidade, valor=$valorTotal")
+            
+            // Verificar se já existe um artigo com o mesmo nome ou ID
+            var existingArtigoIndex = -1
+            
+            if (artigoId > 0) {
+                existingArtigoIndex = artigosList.indexOfFirst { item -> 
+                    item.id == artigoId 
+                }
+            }
+            
+            if (existingArtigoIndex == -1) {
+                existingArtigoIndex = artigosList.indexOfFirst { item -> 
+                    item.nome == nomeArtigo 
+                }
+            }
+            
+            if (existingArtigoIndex != -1) {
+                // Atualizar artigo existente
+                val artigoAtualizado = ArtigoItem(artigoId, nomeArtigo, quantidade = quantidade, preco = valorTotal, numeroSerial = numeroSerial, descricao = descricao)
+                artigosList[existingArtigoIndex] = artigoAtualizado
+                artigoAdapter.notifyItemChanged(existingArtigoIndex)
+                Log.d("SecondScreen", "Artigo atualizado na posição $existingArtigoIndex")
+            } else {
+                // Adicionar novo artigo no topo da lista
+                val novoArtigo = ArtigoItem(artigoId, nomeArtigo, quantidade = quantidade, preco = valorTotal, numeroSerial = numeroSerial, descricao = descricao)
+                artigosList.add(0, novoArtigo)
+                artigoAdapter.notifyItemInserted(0)
+                Log.d("SecondScreen", "Novo artigo adicionado no topo: $nomeArtigo")
+            }
+            
+            updateSubtotal()
+            isFaturaSaved = false
+        }
+        
         atualizarTopAdicionarClienteComNome()
     }
 
@@ -2018,6 +2087,61 @@ class SecondScreenActivity : AppCompatActivity() {
         val saldoDevedor = baseSubtotal - descontoValor + taxaEntrega
         binding.saldoDevedorValueTextView.text = decimalFormat.format(saldoDevedor)
         Log.d("SecondScreen", "Saldo devedor calculado (UI): ${decimalFormat.format(saldoDevedor)}")
+        
+        // Ajustar tamanho da fonte do texto "Saldo Devedor" conforme o valor
+        adjustSaldoTextSize(saldoDevedor)
+    }
+
+    private fun adjustSaldoTextSize(saldoDevedor: Double) {
+        val saldoTextView = binding.saldoDevedorTextView
+        val saldoValueTextView = binding.saldoDevedorValueTextView
+        
+        // Obter o texto formatado do valor
+        val valorText = decimalFormat.format(saldoDevedor)
+        
+        // Definir tamanhos de fonte baseados no tamanho do valor
+        val (textSize, valueTextSize) = when {
+            valorText.length <= 8 -> Pair(20f, 20f) // R$ 0,00 até R$ 999,99
+            valorText.length <= 10 -> Pair(18f, 18f) // R$ 1.000,00 até R$ 99.999,99
+            valorText.length <= 12 -> Pair(16f, 16f) // R$ 100.000,00 até R$ 999.999,99
+            valorText.length <= 14 -> Pair(14f, 14f) // R$ 1.000.000,00 até R$ 9.999.999,99
+            else -> Pair(12f, 12f) // Valores muito grandes
+        }
+        
+        // Aplicar os tamanhos de fonte
+        saldoTextView.textSize = textSize
+        saldoValueTextView.textSize = valueTextSize
+        
+        Log.d("SecondScreen", "Tamanho da fonte ajustado: texto=$textSize, valor=$valueTextSize para valor '$valorText' (${valorText.length} caracteres)")
+    }
+
+    private fun adjustSaldoPaintForPdf(originalPaint: TextPaint, saldoText: String, availableWidth: Float): TextPaint {
+        // Criar uma cópia do paint original
+        val adjustedPaint = TextPaint(originalPaint)
+        
+        // Definir tamanhos de fonte baseados no tamanho do valor para PDF
+        val baseTextSize = when {
+            saldoText.length <= 8 -> 12f // R$ 0,00 até R$ 999,99
+            saldoText.length <= 10 -> 11f // R$ 1.000,00 até R$ 99.999,99
+            saldoText.length <= 12 -> 10f // R$ 100.000,00 até R$ 999.999,99
+            saldoText.length <= 14 -> 9f // R$ 1.000.000,00 até R$ 9.999.999,99
+            else -> 8f // Valores muito grandes
+        }
+        
+        // Calcular se o texto cabe no espaço disponível
+        adjustedPaint.textSize = baseTextSize
+        val labelText = "Saldo Devedor:"
+        val totalTextWidth = adjustedPaint.measureText(labelText) + adjustedPaint.measureText(saldoText) + 10f // 10f de margem
+        
+        // Se não couber, reduzir ainda mais o tamanho da fonte
+        if (totalTextWidth > availableWidth) {
+            val scaleFactor = availableWidth / totalTextWidth
+            adjustedPaint.textSize = baseTextSize * scaleFactor * 0.9f // 0.9f para garantir margem
+        }
+        
+        Log.d("SecondScreen", "PDF - Tamanho da fonte ajustado: ${adjustedPaint.textSize} para valor '$saldoText' (${saldoText.length} caracteres)")
+        
+        return adjustedPaint
     }
 
     private fun showToast(message: String) {

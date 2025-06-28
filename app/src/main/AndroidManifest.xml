@@ -28,14 +28,12 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:launchMode="singleTop">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".SecondScreenActivity"
             android:exported="false"
-            android:launchMode="singleTop"
             android:theme="@style/Theme.SecondScreen" />
         <activity
             android:name=".GaleriaFotosActivity"
@@ -63,8 +61,7 @@
             android:exported="false" />
         <activity
             android:name=".ThirdScreenActivity"
-            android:exported="false"
-            android:launchMode="singleTop" />
+            android:exported="false" />
         <activity
             android:name=".ClienteActivity"
             android:exported="false" />
@@ -128,8 +125,7 @@
             android:exported="false" />
         <activity
             android:name=".ArquivosRecentesActivityRoom"
-            android:exported="false"
-            android:launchMode="singleTop" />
+            android:exported="false" />
         <activity
             android:name=".LimparBancoActivity"
             android:exported="false" />

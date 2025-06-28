@@ -1,0 +1,427 @@
+﻿--------- beginning of main
+06-26 18:10:11.902 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:11.939 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:11.939 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:11.943 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:11.944 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:11.944 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:11.944 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:11.944 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:11.945 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:11.946 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:11.946 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:11.946 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:11.946 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:11.947 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:11.947 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:11.947 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:11.948 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:11.948 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:11.948 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:14.029 32552 32552 D SecondScreen: Clicou em artigo para editar: ID=1, Nome='shsgsss3', Quantidade=1
+06-26 18:10:14.030 32552 32552 D SecondScreen: Enviando para CriarNovoArtigoActivityRoom: artigo_id=1, nome='shsgsss3'
+06-26 18:10:14.674 32552 32552 D SecondScreen: onStop: isFinishing=false, isChangingConfigurations=false
+06-26 18:10:14.675 32552 32552 D SecondScreen: onSaveInstanceState: nomeClienteSalvo=PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812, clienteIdSalvo=396
+06-26 18:10:16.340 32552 32552 D SecondScreen: onActivityResult: requestCode=792, resultCode=-1
+06-26 18:10:16.340 32552 32552 D SecondScreen: Recebido retorno: ID=1, Nome='shsgsss3', Qtd=1
+06-26 18:10:16.340 32552 32552 D SecondScreen: Buscando por ID 1: encontrado na posi├º├úo 0
+06-26 18:10:16.341 32552 32552 D SecondScreen: Ô£à Artigo atualizado na posi├º├úo 0: ID=1, Nome='shsgsss3'
+06-26 18:10:16.341 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:16.341 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:16.342 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:16.342 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:16.342 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:16.343 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:17.102 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:17.102 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=false
+06-26 18:10:17.102 32552 32552 D SecondScreen: onBackPressed: Tentando salvar fatura antes de sair.
+06-26 18:10:17.102 32552 32552 D SecondScreen: saveFatura() iniciado - finalizarActivityAposSalvar: true
+06-26 18:10:17.102 32552 32552 D SecondScreen: Valida├º├Áes passaram, iniciando salvamento no banco
+06-26 18:10:17.103 32552 32552 D SecondScreen: Artigos convertidos para string para salvar: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:17.103 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura para salvar: 1233 (tamanho: 1)
+06-26 18:10:17.106 32552 32552 D SecondScreen: ContentValues preparado para salvar/atualizar fatura: subtotal=52845.350000000006 taxa_entrega=10.0 artigos=1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,, desconto_percent=0 data=2025-06-26 18:10:17 notas=1233 numero_fatura=#0001 cliente=PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812 desconto=10.0 foi_enviada=1 saldo_devedor=52845.350000000006
+06-26 18:10:17.107 32552 32552 D SecondScreen: Tentativa de atualiza├º├úo da fatura ID=1, linhas atualizadas: 1
+06-26 18:10:17.109 32552 32552 D SecondScreen: Foto salva no banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg, faturaId=1, rowId=51
+06-26 18:10:17.110 32552 32552 D SecondScreen: Foto salva no banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg, faturaId=1, rowId=52
+06-26 18:10:17.111 32552 32552 W SecondScreen: Tabela fatura_items n├úo existe, pulando atualiza├º├úo de associa├º├Áes
+06-26 18:10:17.111 32552 32552 D SecondScreen: Fatura atualizada com sucesso no SQLite
+06-26 18:10:17.111 32552 32552 D SecondScreen: Salvando no Room e fechando atividade
+06-26 18:10:17.111 32552 32552 D SecondScreen: Fechando atividade imediatamente ap├│s salvar no SQLite
+06-26 18:10:17.111 32552 32552 D SecondScreen: saveFaturaToRoom() iniciado - faturaId: 1, finalizarActivityAposSalvar: false
+06-26 18:10:17.113 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:17.115 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:17.167 32552 32552 D SecondScreen: Transa├º├úo do banco finalizada
+06-26 18:10:17.168 32552 32552 D SecondScreen: Fatura salva no Room com sucesso: ID=1
+06-26 18:10:17.289 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:17.319 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:17.319 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:17.323 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:17.324 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:17.325 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:17.325 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:17.325 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:17.326 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:17.326 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:17.326 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:17.327 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:17.327 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:17.327 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:17.327 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:17.327 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:17.328 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:17.328 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:17.328 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:17.424 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:17.454 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:17.454 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:17.458 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:17.459 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:17.459 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:17.459 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:17.460 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:17.460 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:17.461 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:17.461 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:17.461 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:17.461 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:17.461 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:17.462 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:17.462 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:17.462 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:17.463 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:17.463 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:17.902 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:17.916 32552 32552 D SecondScreen: onStop: isFinishing=false, isChangingConfigurations=false
+06-26 18:10:17.917 32552 32552 D SecondScreen: onSaveInstanceState: nomeClienteSalvo=PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812, clienteIdSalvo=396
+06-26 18:10:18.519 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:18.519 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:18.519 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:18.519 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:18.519 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:18.521 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:18.558 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:18.593 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:18.593 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:18.597 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:18.597 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:18.598 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:18.598 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:18.598 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:18.599 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:18.600 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:18.600 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:18.600 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:18.600 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:18.600 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:18.600 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:18.601 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:18.601 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:18.601 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:18.602 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:19.044 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:19.737 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:19.737 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:19.737 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:19.737 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:19.737 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:19.739 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:19.776 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:19.810 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:19.810 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:19.814 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:19.814 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:19.815 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:19.815 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:19.815 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:19.816 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:19.816 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:19.817 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:19.817 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:19.817 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:19.817 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:19.817 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:19.818 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:19.818 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:19.818 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:19.818 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:20.253 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:20.831 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:20.832 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:20.832 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:20.832 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:20.832 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:20.834 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:20.871 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:20.905 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:20.905 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:20.909 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:20.909 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:20.910 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:20.910 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:20.910 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:20.911 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:20.911 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:20.912 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:20.912 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:20.912 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:20.912 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:20.912 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:20.913 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:20.913 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:20.913 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:20.913 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:21.382 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:21.836 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:21.836 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:21.836 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:21.836 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:21.836 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:21.837 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:22.251 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:22.746 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:22.746 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:22.747 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:22.747 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:22.747 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:22.749 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:22.775 32552 32552 D MainActivity: Carregando faturas...
+06-26 18:10:22.782 32552 32552 D MainActivity: onResume chamado - MainActivity recebeu foco
+06-26 18:10:22.787 32552 32552 D MainActivity: Faturas carregadas: 1
+06-26 18:10:23.175 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:33.361 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:33.397 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:33.397 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:33.401 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:33.402 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:33.402 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:33.402 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:33.403 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:33.403 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:33.404 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:33.404 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:33.404 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:33.404 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:33.404 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:33.405 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:33.405 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:33.405 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:33.406 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:33.406 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:37.023 32552 32552 D SecondScreen: onStop: isFinishing=false, isChangingConfigurations=false
+06-26 18:10:37.025 32552 32552 D SecondScreen: onSaveInstanceState: nomeClienteSalvo=PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812, clienteIdSalvo=396
+06-26 18:10:40.581 32552 32552 D SecondScreen: onActivityResult: requestCode=456, resultCode=-1
+06-26 18:10:40.581 32552 32552 D SecondScreen: Retorno de ThirdScreen: Desconto=10.0, isPercent=false, Taxa=10.0
+06-26 18:10:40.581 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:40.582 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:40.582 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:40.582 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:40.582 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:40.582 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:41.363 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:41.363 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=false
+06-26 18:10:41.363 32552 32552 D SecondScreen: onBackPressed: Tentando salvar fatura antes de sair.
+06-26 18:10:41.363 32552 32552 D SecondScreen: saveFatura() iniciado - finalizarActivityAposSalvar: true
+06-26 18:10:41.363 32552 32552 D SecondScreen: Valida├º├Áes passaram, iniciando salvamento no banco
+06-26 18:10:41.364 32552 32552 D SecondScreen: Artigos convertidos para string para salvar: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:41.364 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura para salvar: 1233 (tamanho: 1)
+06-26 18:10:41.365 32552 32552 D SecondScreen: ContentValues preparado para salvar/atualizar fatura: subtotal=52845.350000000006 taxa_entrega=10.0 artigos=1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,, desconto_percent=0 data=2025-06-26 18:10:41 notas=1233 numero_fatura=#0001 cliente=PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812 desconto=10.0 foi_enviada=1 saldo_devedor=52845.350000000006
+06-26 18:10:41.366 32552 32552 D SecondScreen: Tentativa de atualiza├º├úo da fatura ID=1, linhas atualizadas: 1
+06-26 18:10:41.366 32552 32552 D SecondScreen: Foto salva no banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg, faturaId=1, rowId=53
+06-26 18:10:41.367 32552 32552 D SecondScreen: Foto salva no banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg, faturaId=1, rowId=54
+06-26 18:10:41.367 32552 32552 W SecondScreen: Tabela fatura_items n├úo existe, pulando atualiza├º├úo de associa├º├Áes
+06-26 18:10:41.367 32552 32552 D SecondScreen: Fatura atualizada com sucesso no SQLite
+06-26 18:10:41.367 32552 32552 D SecondScreen: Salvando no Room e fechando atividade
+06-26 18:10:41.367 32552 32552 D SecondScreen: Fechando atividade imediatamente ap├│s salvar no SQLite
+06-26 18:10:41.367 32552 32552 D SecondScreen: saveFaturaToRoom() iniciado - faturaId: 1, finalizarActivityAposSalvar: false
+06-26 18:10:41.369 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:41.370 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:41.382 32552 32552 D SecondScreen: Transa├º├úo do banco finalizada
+06-26 18:10:41.383 32552 32552 D SecondScreen: Fatura salva no Room com sucesso: ID=1
+06-26 18:10:41.496 32552 32552 D MainActivity: Carregando faturas...
+06-26 18:10:41.496 32552 32552 D MainActivity: onResume chamado - MainActivity recebeu foco
+06-26 18:10:41.507 32552 32552 D MainActivity: Faturas carregadas: 1
+06-26 18:10:41.536 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:41.566 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:41.566 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:41.570 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:41.570 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:41.571 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:41.571 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:41.571 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:41.572 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:41.572 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:41.572 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:41.572 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:41.572 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:41.573 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:41.573 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:41.573 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:41.573 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:41.574 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:41.574 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:42.030 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:42.227 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:42.227 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:42.227 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:42.227 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:42.227 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:42.229 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:42.262 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:42.295 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:42.295 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:42.299 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:42.300 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:42.300 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:42.301 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:42.301 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:42.302 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:42.302 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:42.302 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:42.302 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:42.302 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:42.303 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:42.303 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:42.303 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:42.303 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:42.304 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:42.304 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:42.747 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:42.898 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:42.898 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:42.899 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:42.899 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:42.899 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:42.900 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:42.934 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:42.966 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:42.966 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:42.970 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:42.970 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:42.971 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:42.971 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:42.971 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:42.972 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:42.973 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:42.973 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:42.973 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:42.973 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:42.973 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:42.974 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:42.974 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:42.974 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:42.974 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:42.974 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:43.419 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:43.651 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:43.651 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:43.651 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:43.651 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:43.651 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:43.654 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:43.685 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:43.717 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:43.717 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:43.721 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:43.722 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:43.722 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:43.723 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:43.723 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:43.723 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:43.724 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:43.724 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:43.724 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:43.724 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:43.724 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:43.725 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:43.725 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:43.725 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:43.725 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:43.726 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:44.165 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:44.339 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:44.339 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:44.339 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:44.339 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:44.339 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:44.340 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:44.372 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:44.403 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:44.403 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:44.407 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:44.407 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:44.408 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:44.408 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:44.408 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:44.409 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:44.410 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:44.410 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:44.410 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:44.410 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:44.410 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:44.411 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:44.411 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:44.411 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:44.411 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:44.411 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:44.855 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:45.101 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:45.101 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:45.101 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:45.101 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:45.101 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:45.103 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:45.142 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:10:45.175 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:10:45.175 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:10:45.178 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:10:45.179 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:10:45.179 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:10:45.180 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:10:45.180 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:10:45.180 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:10:45.181 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:10:45.181 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:10:45.181 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:10:45.181 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:10:45.182 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:10:45.182 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:10:45.182 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:10:45.182 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:10:45.183 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:10:45.183 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)
+06-26 18:10:45.618 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:10:45.776 32552 32552 D SecondScreen: onBackPressed disparado.
+06-26 18:10:45.776 32552 32552 D SecondScreen: Estado atual: nomeClienteSalvo='PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812', artigosList.size=10, isFaturaSaved=true
+06-26 18:10:45.776 32552 32552 D SecondScreen: onBackPressed: Finalizando atividade sem salvar.
+06-26 18:10:45.776 32552 32552 D SecondScreen: onBackPressed: Chamando finish() para voltar ├á MainActivity
+06-26 18:10:45.776 32552 32552 D SecondScreen: Finalizando: faturaEnviadaSucesso=true, faturaId=1
+06-26 18:10:45.776 32552 32552 D SecondScreen: Finalizando: isFaturaSaved=true ou cliente modificado, faturaId=1
+06-26 18:10:45.796 32552 32552 D MainActivity: Carregando faturas...
+06-26 18:10:45.802 32552 32552 D MainActivity: onResume chamado - MainActivity recebeu foco
+06-26 18:10:45.830 32552 32552 D MainActivity: Faturas carregadas: 1
+06-26 18:10:46.180 32552 32552 D SecondScreen: onStop: isFinishing=true, isChangingConfigurations=false
+06-26 18:25:35.393 32552 32552 D MainActivity: onResume chamado - MainActivity recebeu foco
+06-26 18:25:35.430 32552 32552 D MainActivity: Carregando faturas...
+06-26 18:25:35.698 32552 32552 D MainActivity: Faturas carregadas: 1
+06-26 18:27:50.267 32552 32552 D MainActivity: onResume chamado - MainActivity recebeu foco
+06-26 18:27:50.280 32552 32552 D MainActivity: Carregando faturas...
+06-26 18:27:50.440 32552 32552 D MainActivity: Faturas carregadas: 1
+06-26 18:28:59.859 32552 32552 D SecondScreen: onCreate chamado
+06-26 18:28:59.924 32552 32552 D SecondScreen: ClienteDbHelper inicializado com sucesso
+06-26 18:28:59.924 32552 32552 D SecondScreen: Room Database inicializado com sucesso
+06-26 18:28:59.930 32552 32552 D SecondScreen: Carregando fatura do banco de dados com ID: 1
+06-26 18:28:59.931 32552 32552 D SecondScreen: Nome do cliente carregado do banco: PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812
+06-26 18:28:59.933 32552 32552 D SecondScreen: ID do cliente (PAULO HENRIQUE DOS SANTOS ARAUJO AMORIM 41094519812) encontrado no banco: 396
+06-26 18:28:59.933 32552 32552 D SecondScreen: N├║mero da fatura carregado: #0001
+06-26 18:28:59.933 32552 32552 D SecondScreen: Carregando artigos do banco: 1,shsgsss3,1,49.49,,|2,shsvsv,1,794.48,,|,shafsc,1,448.48,QUL6J59,zbbzvz|3,sbsvs,14,68.32,,|4,zhsvvs,1,9.78,,|5,zbzcsc,1,18.18,,|6,shsvsc,1,1918.18,,|7,1,1,49488.48,,|8,shsvve,1,49.48,,|9,sgwvv,1,0.48,,
+06-26 18:28:59.934 32552 32552 D SecondScreen: Artigos carregados com sucesso do banco: 10 itens
+06-26 18:28:59.935 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_GAL_1750968060774_1000355257_1750968060808.jpg para fatura ID 1
+06-26 18:28:59.935 32552 32552 D SecondScreen: Foto carregada do banco: /storage/emulated/0/Android/data/com.example.myapplication.debug/files/Pictures/COMP_ORIENTED_JPEG_CAM_20250626_170101_4509011625438514963_1750968069914.jpg para fatura ID 1
+06-26 18:28:59.935 32552 32552 D SecondScreen: Fotos carregadas do banco para fatura ID 1: 2 itens
+06-26 18:28:59.935 32552 32552 D SecondScreen: Notas espec├¡ficas da fatura ID 1 carregadas do banco: 1 itens
+06-26 18:28:59.935 32552 32552 D SecondScreen: Calculando subtotal. Base Subtotal (soma dos pre├ºos dos artigos): 52845.350000000006
+06-26 18:28:59.936 32552 32552 D SecondScreen: Desconto (valor num├®rico): 10.0, isPercent=false, Desconto calculado (descontoValor): 10.0
+06-26 18:28:59.936 32552 32552 D SecondScreen: Texto do desconto (UI): (R$ 10,00)
+06-26 18:28:59.936 32552 32552 D SecondScreen: Taxa de entrega (UI): R$ 10,00
+06-26 18:28:59.937 32552 32552 D SecondScreen: Saldo devedor calculado (UI): R$ 52.845,35
+06-26 18:28:59.937 32552 32552 D SecondScreen: Tamanho da fonte ajustado: texto=16.0, valor=16.0 para valor 'R$ 52.845,35' (12 caracteres)

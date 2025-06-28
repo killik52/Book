@@ -305,7 +305,9 @@ class CriarNovoArtigoActivity : AppCompatActivity() {
             showToast("Artigo será usado apenas na fatura atual.")
         }
 
-        val resultIntent = Intent().apply {
+        // Navegar para a SecondScreen com os dados do artigo
+        val activityIntent = this.intent
+        val secondScreenIntent = Intent(this, SecondScreenActivity::class.java).apply {
             putExtra("artigo_id", idParaRetorno)
             putExtra("nome_artigo", nome)
             putExtra("quantidade", quantidade)
@@ -314,8 +316,14 @@ class CriarNovoArtigoActivity : AppCompatActivity() {
             putExtra("numero_serial", numeroSerial)
             putExtra("salvar_fatura", guardarParaRecentes)
             putExtra("descricao", descricao)
+            // Manter os dados do cliente se existirem
+            activityIntent.getStringExtra("nome_cliente")?.let { putExtra("nome_cliente", it) }
+            activityIntent.getLongExtra("cliente_id", -1L).takeIf { it != -1L }?.let { putExtra("cliente_id", it) }
         }
-        setResult(Activity.RESULT_OK, resultIntent)
+        
+        // Limpar a pilha de atividades e iniciar a SecondScreen
+        secondScreenIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(secondScreenIntent)
         finish()
     }
 

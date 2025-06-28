@@ -96,6 +96,8 @@ class ThirdScreenActivity : AppCompatActivity() {
     // 15. Método para salvar os dados e retornar à atividade chamadora
     private fun saveAndReturn() {
         try {
+            Log.d("ThirdScreen", "saveAndReturn iniciado")
+            
             // 16. Converte o valor do desconto, substituindo vírgula por ponto
             // Lida com texto vazio ou não numérico, retornando 0.0 nesses casos.
             val descontoText = valorEditText.text.toString().replace("R$", "").trim().replace(".", "").replace(",", ".")
@@ -107,6 +109,8 @@ class ThirdScreenActivity : AppCompatActivity() {
 
             // 18. Determina se o desconto é percentual (1 para "%", 0 para "R$")
             val isPercent = descontoTypeSpinner.selectedItemPosition == 1
+
+            Log.d("ThirdScreen", "Dados processados: desconto=$descontoValue, taxa=$taxaEntregaValue, isPercent=$isPercent")
 
             // 19. Cria um Intent com os dados a serem retornados
             val resultIntent = Intent().apply {
@@ -121,13 +125,39 @@ class ThirdScreenActivity : AppCompatActivity() {
                 putExtra("isPercentDesconto", isPercent)
                 putExtra("taxaEntrega", taxaEntregaValue) // Passa o valor como está (ex: 5.20 para R$5,20)
             }
+            
+            Log.d("ThirdScreen", "Intent preparado com sucesso")
+            
             // 20. Define o resultado como bem-sucedido e retorna
             setResult(Activity.RESULT_OK, resultIntent)
-            finish()
+            Log.d("ThirdScreen", "Resultado definido como RESULT_OK")
+            
+            // NÃO fechar automaticamente - deixar o usuário decidir quando sair
+            // finish()
+            
+            // Mostrar toast informativo
+            showToast("Dados salvos! Tela permanece aberta para continuar editando.")
+            Log.d("ThirdScreen", "Tela permanecerá aberta para continuar editando")
+            
         } catch (e: Exception) {
             // 21. Registra e exibe erro se houver falha ao salvar
             Log.e("ThirdScreen", "Erro ao salvar dados: ${e.message}")
+            e.printStackTrace()
             showToast("Erro ao salvar dados: ${e.message}")
+            
+            // Mesmo com erro, tentar retornar com dados padrão
+            try {
+                val fallbackIntent = Intent().apply {
+                    putExtra("desconto", 0.0)
+                    putExtra("isPercentDesconto", false)
+                    putExtra("taxaEntrega", 0.0)
+                }
+                setResult(Activity.RESULT_CANCELED, fallbackIntent)
+                finish()
+            } catch (e2: Exception) {
+                Log.e("ThirdScreen", "Erro fatal ao retornar com dados padrão: ${e2.message}")
+                finish()
+            }
         }
     }
 
@@ -139,6 +169,35 @@ class ThirdScreenActivity : AppCompatActivity() {
     // 23. Método para lidar com o botão voltar do Android
     override fun onBackPressed() {
         Log.d("ThirdScreen", "onBackPressed disparado.")
-        saveAndReturn()
+        Log.d("ThirdScreen", "Salvando dados antes de voltar...")
+        try {
+            // Salvar dados mas não fechar automaticamente
+            val descontoText = valorEditText.text.toString().replace("R$", "").trim().replace(".", "").replace(",", ".")
+            val descontoValue = if (descontoText.isEmpty()) 0.0 else descontoText.toDoubleOrNull() ?: 0.0
+            val taxaEntregaText = valorRemessaEditText.text.toString().replace("R$", "").trim().replace(".", "").replace(",", ".")
+            val taxaEntregaValue = if (taxaEntregaText.isEmpty()) 0.0 else taxaEntregaText.toDoubleOrNull() ?: 0.0
+            val isPercent = descontoTypeSpinner.selectedItemPosition == 1
+            
+            val resultIntent = Intent().apply {
+                putExtra("desconto", descontoValue)
+                putExtra("isPercentDesconto", isPercent)
+                putExtra("taxaEntrega", taxaEntregaValue)
+            }
+            setResult(Activity.RESULT_OK, resultIntent)
+            
+            // Fechar a tela quando o usuário pressionar voltar
+            finish()
+            Log.d("ThirdScreen", "Dados salvos e tela fechada pelo botão voltar")
+        } catch (e: Exception) {
+            Log.e("ThirdScreen", "Erro no onBackPressed: ${e.message}")
+            e.printStackTrace()
+            // Mesmo com erro, tentar finalizar a atividade
+            try {
+                finish()
+            } catch (e2: Exception) {
+                Log.e("ThirdScreen", "Erro fatal ao finalizar: ${e2.message}")
+                super.onBackPressed()
+            }
+        }
     }
 }

@@ -60,7 +60,7 @@ class ListarArtigosActivity : AppCompatActivity() {
                 return
             }
 
-            // 17. Consulta os artigos no banco de dados, ordenados por nome
+            // 17. Consulta os artigos no banco de dados, ordenados por ID decrescente (mais recentes primeiro)
             val cursor: Cursor? = db.rawQuery(
                 "SELECT ${android.provider.BaseColumns._ID}, " +
                         "${ArtigoContract.ArtigoEntry.COLUMN_NAME_NOME}, " +
@@ -69,7 +69,7 @@ class ListarArtigosActivity : AppCompatActivity() {
                         "${ArtigoContract.ArtigoEntry.COLUMN_NAME_NUMERO_SERIAL}, " +
                         "${ArtigoContract.ArtigoEntry.COLUMN_NAME_DESCRICAO} " +
                         "FROM ${ArtigoContract.ArtigoEntry.TABLE_NAME} " +
-                        "ORDER BY ${ArtigoContract.ArtigoEntry.COLUMN_NAME_NOME} ASC",
+                        "ORDER BY ${android.provider.BaseColumns._ID} DESC",
                 null
             )
 

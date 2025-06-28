@@ -125,12 +125,10 @@ class ArquivosRecentesActivityRoom : AppCompatActivity() {
         displayList.clear()
         
         lifecycleScope.launch {
-            artigoViewModel.allArtigos.collectLatest { artigos ->
+            artigoViewModel.getRecentArtigos(20).collectLatest { artigos ->
                 artigos?.let { listaArtigos ->
                     // Filtra apenas artigos que devem ser guardados para faturas
                     val artigosRecentes = listaArtigos.filter { it.guardarFatura == true }
-                        .sortedByDescending { it.id }
-                        .take(20) // Limita aos 20 mais recentes
                     
                     artigosRecentes.forEach { artigo ->
                         val nome = artigo.nome ?: "Artigo sem nome"

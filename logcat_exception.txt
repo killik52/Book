@@ -1,0 +1,39 @@
+06-26 15:38:55.310  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:55.310  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:55.403  2521  8734 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.424  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:55.424  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:55.432  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.434  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.437  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:55.437  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:55.471  3673 22356 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.474  3673 22356 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.479  3673 26607 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:55.489  1585  1585 W Bundle  : Attempt to cast generated internal exception:
+06-26 15:38:55.489  1585  1585 W Bundle  : java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+06-26 15:38:56.441  1130  1495 W System.err: java.io.FileNotFoundException: /sys/class/lcd/panel/display_on: open failed: EACCES (Permission denied)
+06-26 15:38:56.442  1130  1495 W System.err: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+06-26 15:38:56.558  2521  8882 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.600  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.600  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.603  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.614  2521  8874 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.621  3673 22345 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.625  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.625  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.627  3673 22345 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.629  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.629  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.632  3673 26607 E LoadedApk: Exception : java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.Looper.isPerfLogEnable()' on a null object reference
+06-26 15:38:56.639  1585  1585 I System.out: test static void android.appwidget.AppWidgetHostView.-$$Nest$mapplyContent(android.appwidget.AppWidgetHostView,android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.639  1585  1585 I System.out: test private void android.appwidget.AppWidgetHostView.applyContent(android.view.View,boolean,java.lang.Exception)
+06-26 15:38:56.698  1585  1585 W AOD_MONITOR@BroadcastMonitor: unregister: failed to unregister : android.intent.action.SERVICE_STATE java.lang.IllegalArgumentException: Receiver not registered: g.g0@864bbf0
+06-26 15:38:56.698  2521  6302 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+06-26 15:39:00.227  1130  1509 E ProcessStateTracker: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+06-26 15:39:26.681 12916 16845 E msys    : E[N mccw.liger]onReadError(732)=>read/error - ex: AsyncSocketException: recv() failed (peer=57.144.164.36:5222), type = Internal error, errno = 103 (Software caused connection abort), errno: 103
+06-26 15:39:27.059  9347  9397 I exception_handler: Native DumpCallback Run lck
+06-26 15:39:27.059  9347  9397 I exception_handler: Native DumpCallback Run wait
+06-26 15:39:27.059  9347  9398 I exception_handler: ANR DumpCallback Run lck
+06-26 15:39:27.059  9347  9398 I exception_handler: ANR DumpCallback Run wait
+06-26 15:39:27.125  9347  9400 W System.err: java.lang.NoSuchFieldException

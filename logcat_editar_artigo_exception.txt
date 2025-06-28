@@ -1,0 +1,60 @@
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:3649:06-26 15:55:27.859  1959  1959 E MediaControllerCompat: android.os.DeadObjectException
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:3821:06-26 15:55:27.961  1130  4654 W ActivityManager: Exception when unbinding service com.google.android.apps.docs/com.google.android.apps.viewer.pdflib.PdfDocumentService
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:3822:06-26 15:55:27.961  1130  4654 W ActivityManager: android.os.DeadObjectException
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:3948:06-26 15:55:28.049  1130  1408 W ActivityManager: Exception when unbinding service com.android.chrome/org.chromium.content.app.PrivilegedProcessService0
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:3949:06-26 15:55:28.049  1130  1408 W ActivityManager: android.os.DeadObjectException
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9682:06-26 15:55:45.365 19413 19413 W MDCLLight: java.lang.ClassNotFoundException: kotlinx.coroutines.test.internal.TestMainDispatcherFactory
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9803:06-26 15:55:45.473 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9832:06-26 15:55:45.474 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9863:06-26 15:55:45.474 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9894:06-26 15:55:45.475 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9928:06-26 15:55:45.486 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:9966:06-26 15:55:45.487 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10005:06-26 15:55:45.487 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10043:06-26 15:55:45.488 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10081:06-26 15:55:45.488 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10119:06-26 15:55:45.489 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10157:06-26 15:55:45.490 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10195:06-26 15:55:45.491 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10233:06-26 15:55:45.491 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10271:06-26 15:55:45.492 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10309:06-26 15:55:45.493 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10347:06-26 15:55:45.494 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10385:06-26 15:55:45.494 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10423:06-26 15:55:45.495 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10461:06-26 15:55:45.496 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10499:06-26 15:55:45.496 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10537:06-26 15:55:45.497 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10575:06-26 15:55:45.498 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10615:06-26 15:55:45.499 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10653:06-26 15:55:45.501 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10693:06-26 15:55:45.502 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10733:06-26 15:55:45.503 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10774:06-26 15:55:45.504 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10804:06-26 15:55:45.505 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10834:06-26 15:55:45.505 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10867:06-26 15:55:45.509 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10898:06-26 15:55:45.518 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10936:06-26 15:55:45.582 19413 19476 W QPLConfig: java.io.FileNotFoundException: /data/user/0/com.instagram.android/app_qpl/qpl_sampling_config_v2.null: open failed: ENOENT (No such file or directory)
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10951:06-26 15:55:45.582 19413 19476 W QPLConfig: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:10972:06-26 15:55:45.617 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.Extension
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11002:06-26 15:55:45.618 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.ExtensionRegistry
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11036:06-26 15:55:45.659 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.DescriptorMessageInfoFactory
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11068:06-26 15:55:45.661 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.GeneratedMessageV3
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11099:06-26 15:55:45.663 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.UnknownFieldSetSchema
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11130:06-26 15:55:45.665 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.UnknownFieldSetSchema
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11162:06-26 15:55:45.667 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: org.robolectric.Robolectric
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11201:06-26 15:55:45.670 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.NewInstanceSchemaFull
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11234:06-26 15:55:45.672 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.ExtensionSchemaFull
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11265:06-26 15:55:45.674 19413 19528 W MDCLLight: java.lang.ClassNotFoundException: androidx.datastore.preferences.protobuf.MapFieldSchemaFull
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11406:06-26 15:55:45.804 19413 19413 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11671:06-26 15:55:46.013 19413 19509 W MDCLLight: java.lang.ClassNotFoundException: org.slf4j.impl.StaticLoggerBinder
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:11758:06-26 15:55:46.130 19413 19413 W MDCLLight: java.lang.ClassNotFoundException: com.amazon.device.messaging.ADM
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:12895:06-26 15:55:47.808 19413 19579 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13158:06-26 15:55:48.830 19413 19594 W IgMetaConfig: java.lang.RuntimeException: Could not obtain MC, call-site will receive default values
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13233:06-26 15:55:49.155 19413 19473 E StellaIntentHelper: android.content.pm.PackageManager$NameNotFoundException: com.facebook.stella
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13455:06-26 15:55:50.582 19413 19730 E ActionQueryTaskListener: 0 onLoadBatchComplete exception: null BACKGROUND modules: [s_executorch_pytorch(*),pytorch]
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13486:06-26 15:55:50.892 19413 19518 W MDCLLight: java.lang.ClassNotFoundException: org.apache.http.entity.InputStreamEntity
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13550:06-26 15:55:51.069 19413 19730 E ActionQueryTaskListener: 1 onLoadBatchComplete exception: null BACKGROUND modules: [executorch,s_executorch_pytorch(*)]
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13569:06-26 15:55:51.898 19413 19738 E ActionQueryTaskListener: 2 onLoadBatchComplete exception: null FOREGROUND modules: [s_executorch_pytorch(*),s_audio_stream_processor_configurable_audio(*),pytorch(*),audio_stream_processor(*),audio_stream_processor_shim_impl]
+D:\Arquivos\Pessoas\Paulo\Book\logcat_editar_artigo.txt:13953:06-26 15:55:55.224   687   687 E audit   : type=1400 audit(1750964155.220:13410): avc:  granted  { execute } for  pid=19413 comm="SWPool3_t1of1" path="/data/data/com.instagram.android/lib-compressed/libbreakpad-fatal-java-exception-description-handler-jni.so" dev="dm-55" ino=174312 scontext=u:r:untrusted_app:s0:c210,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c210,c257,c512,c768 tclass=file SEPF_SM-M546B_13_0001 audit_filtered
